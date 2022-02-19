@@ -1,8 +1,8 @@
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 
 export default function Condensation() {  
   return (    
-    <div>test</div>
+    <div>Layout condensation / need to use sublayout</div>
   )
 }
 
