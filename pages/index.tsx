@@ -9,13 +9,13 @@ import illustration from '../assets/img/cds-illustration.png'
 export default function Home() {      
   return (   
     <div className='flex flex-col w-full bg-red'>
-      <div className='absolute top-10 right-0 overflow-hidden max-h-[85%]'>
+      <div className='absolute top-10 right-0 overflow-hidden max-h-[85%] invisible md:visible'>
           <Image src={illustration} />  
       </div>      
-      <div className='w-full justify-center items-center max-w-[80%]'>
-        <p className={`p-10 m-5 ${styles['main-header-title']}`}>Condensation is an <strong>open-source</strong> project disrupting how we create applications to match the challenges of the era of data.</p>
+      <div className='w-full justify-center items-center max-w-[85%]'>
+        <p className={`m-5 mt-5 sm:p-10 sm:text-xl text-lg ${styles['main-header-title']}`}>Condensation is an <strong>open-source</strong> project disrupting how we create applications to match the challenges of the era of data.</p>
       </div>      
-      <div className='flex pl-20'>
+      <div className='flex pl-5 pt-5 sm:pl-20'>
         <button type="button"
           className='inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded-full bg-white'>
           Read more
@@ -34,7 +34,7 @@ export default function Home() {
           </button>
       </div>
   
-      <div className='md:absolute md:p-20 bottom-0'>
+      <div className='absolute p-5 md:p-20 bottom-0'>
         <p className='text-white'>Sponsored by</p>
         <div className='flex flex-row mt-5'>
           <a className='mr-10'>

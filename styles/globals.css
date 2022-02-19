@@ -19,10 +19,10 @@ a {
 }
 
 .sidebar {
-  width: 400px;
+  min-width: 200px;  
   padding-top: 30px;
   font-weight: bold;
-  color: #383838;
+  color: #383838;  
 }
 
 .line {

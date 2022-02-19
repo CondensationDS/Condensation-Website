@@ -8,8 +8,8 @@ export default function Layout({ children }) {
     return (
       <div className={styles.container}>
         <Header /> 
-        <Navbar />             
-        <div className='flex invisible h-0 md:invisible sm:invisible sm:h-0 lg:visible'>
+        <Navbar />         
+        <div className='flex-none md:flex hidden h-0 md:visible sm:h-full'>
           <Sidebar />
           <div>
             <main className={styles.main}>
@@ -17,8 +17,8 @@ export default function Layout({ children }) {
             </main>
             <Footer />
           </div>
-        </div>   
-        <div className='flex-col sm:visible md:visible lg:invisible'>                    
+        </div>     
+        <div className='flex-none block h-full sm:hidden md:h-0'>                    
             <main className={styles.main}>
               {children}
             </main>
