@@ -1,11 +1,19 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import { ReactNode } from 'react'
+import { NextPage } from "next";
 
-function CondensationApp({ Component, pageProps }: AppProps) {
-  // Use the layout defined at the page level, if available
-  const getLayout = Component.getLayout || ((page) => page)
+type Page<P = {}> = NextPage<P> & {
+  getLayout?: (page: ReactNode) => ReactNode;
+};
 
-  return getLayout(<Component {...pageProps} />)
-}
+type Props = AppProps & {
+  Component: Page;
+};
 
+const CondensationApp = ({ Component, pageProps }: Props) => {
+  const getLayout = Component.getLayout ?? ((page: ReactNode) => page);
+  return getLayout(<Component {...pageProps} />);
+};
 export default CondensationApp
+
