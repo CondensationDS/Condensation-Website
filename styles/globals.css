@@ -32,3 +32,9 @@ a {
 .gradient-bg-home {  
   background: linear-gradient(90deg, #2B5CD9 0%, #5FA9EC 100%)
 }
+
+.head-content {
+  font-weight: lighter;
+  color: #383838;
+  background: #F4F4F4;
+}
