@@ -41,17 +41,17 @@ export default function Home() {
             <Image
                 className='mr-10'
                 src={trust}
-                alt="Logo trust valley" />  
+                alt="Trust Valley logo" />  
           </a>
           <a className='mr-10 pt-2'>
             <Image
               src={epfl}
-              alt="Logo epfl" />  
+              alt="EPFL logo" />  
           </a>   
           <a className='mr-10 pt-2'>
             <Image
               src={vaud}
-              alt="Logo canton de vaud" />  
+              alt="Canton de Vaud logo" />  
           </a>   
         </div>
       </div> 

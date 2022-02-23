@@ -11,7 +11,7 @@ export default function Layout({ children }) {
         <Navbar />         
         <div className='flex-none md:flex hidden h-0 md:visible sm:h-full'>
           <Sidebar />
-          <div>
+          <div className='scroll-smooth'>
             <main className={styles.main}>
               {children}
             </main>
