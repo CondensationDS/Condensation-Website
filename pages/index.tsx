@@ -1,5 +1,15 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
+
+import Title from '../components/Title'
+import SubTitle from '../components/SubTitle'
+import SubSubTitle from '../components/SubSubTitle'
+
+import Description from '../components/Description'
+import Anchor from '../components/Anchor'
+import NextPage from '../components/NextPage'
+
+
 import styles from '../styles/Home.module.css'
 import epfl from '../assets/img/logos/logo-sponsor-epfl.svg'
 import trust from '../assets/img/logos/logo-sponsor-trust-valley.svg'
@@ -41,17 +51,17 @@ export default function Home() {
             <Image
                 className='mr-10'
                 src={trust}
-                alt="Logo trust valley" />  
+                alt="Trust Valley logo" />  
           </a>
           <a className='mr-10 pt-2'>
             <Image
               src={epfl}
-              alt="Logo epfl" />  
+              alt="EPFL logo" />  
           </a>   
           <a className='mr-10 pt-2'>
             <Image
               src={vaud}
-              alt="Logo canton de vaud" />  
+              alt="Canton de Vaud logo" />  
           </a>   
         </div>
       </div> 
