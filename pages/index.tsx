@@ -1,5 +1,15 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
+
+import Title from '../components/Title'
+import SubTitle from '../components/SubTitle'
+import SubSubTitle from '../components/SubSubTitle'
+
+import Description from '../components/Description'
+import Anchor from '../components/Anchor'
+import NextPage from '../components/NextPage'
+
+
 import styles from '../styles/Home.module.css'
 import epfl from '../assets/img/logos/logo-sponsor-epfl.svg'
 import trust from '../assets/img/logos/logo-sponsor-trust-valley.svg'

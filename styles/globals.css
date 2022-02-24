@@ -52,3 +52,28 @@ a {
 .gradient-bg-home {  
   background: linear-gradient(60deg, #2B5CD9 0%, #5FA9EC 100%)
 }
+
+
+.page-title {
+  height:16rem;
+  padding-left: 6rem;
+  padding-bottom: 3rem;
+  padding-right: 3rem;
+  font-size: 3rem;
+  color:white;
+  background: linear-gradient(45deg, #2B5CD9 0%, #5FA9EC 100%);
+  display:flex;
+  align-items: flex-end;
+}
+
+.page-content {
+  width:720px;
+  padding-left: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  color:#383838;
+}
+
+.page-content p {
+  margin-bottom:16px;
+}
