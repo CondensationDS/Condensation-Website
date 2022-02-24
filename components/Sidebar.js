@@ -12,23 +12,23 @@ export default function Sidebar() {
                         </Link>
                     </li>
                     <li className='list-none mt-3'>
-                        <Link href="/about">
+                        <Link href="/caseStudies">
                             <a>Case studies</a>
                         </Link>
                     </li>
                     <li className='list-none mt-3'>
-                        <Link href="/about">
+                        <Link href="/developWithCDS">
                             <a>Develop with CDS</a>
                         </Link>
                     </li>
                     <li className='list-none mt-3'>
-                        <Link href="/about">
+                        <Link href="/meetTheTeam">
                             <a>Meet the team</a>
                         </Link>
                     </li>
                     <li className='list-none mt-3'>
-                        <Link href="/about">
-                            <a>Our services</a>
+                        <Link href="/makeItHappen">
+                            <a>Make it happen</a>
                         </Link>
                     </li>
                     <div className='bg-gray-200 line mt-5 mr-5'></div>
