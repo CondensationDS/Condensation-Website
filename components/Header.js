@@ -3,8 +3,8 @@ import Head from 'next/head'
 const Header = () => {
     return (         
         <Head>
-            <title>Condensation</title>
-            <meta name="description" content="Condensation - DLT" />
+            <title>Condensation Data System</title>
+            <meta name="description" content="Condensation Data System" />
             <link rel="icon" href="/favicon.ico" />            
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
