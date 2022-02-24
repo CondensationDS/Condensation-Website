@@ -34,7 +34,7 @@ export default function Home() {
           </button>
       </div>
   
-      <div className='absolute p-5 md:p-20 bottom-0'>
+      <div className='pl-5 md:pl-20 mt-80'>
         <p className='text-white'>Sponsored by</p>
         <div className='flex flex-row mt-5'>
           <a className='mr-10'>
