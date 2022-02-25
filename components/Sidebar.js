@@ -1,33 +1,38 @@
 import Link from 'next/link'
+import { useRouter } from "next/router"
+import Image from 'next/image'
+import defaults from '../common/defaults'
+import externalLinkIcon from '../assets/img/external-link.svg'
 
 export default function Sidebar() {
+    const router = useRouter()
 
     return (
         <div className='py-6'>
             <div className='sidebar w-64'>
                 <ul>
-                    <li className='list-none py-0.5 px-6'>
-                        <Link href="/What-is-condensation">
+                    <li className={`list-none py-0.5 px-6 ${(router.pathname == '/discover' ? 'active' : '')}`}>
+                        <Link href="/discover">
                             <a>What is Condensation?</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/caseStudies">
+                    <li className={`list-none py-0.5 px-6 ${(router.pathname == '/case-studies' ? 'active' : '')}`}>
+                        <Link href="/case-studies">
                             <a>Case studies</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/developWithCDS">
+                    <li className={`list-none py-0.5 px-6 ${(router.pathname == '/get-started' ? 'active' : '')}`}>
+                        <Link href="/get-started">
                             <a>Develop with CDS</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/meetTheTeam">
+                    <li className={`list-none py-0.5 px-6 ${(router.pathname == '/about-us' ? 'active' : '')}`}>
+                        <Link href="/about-us">
                             <a>Meet the team</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/makeItHappen">
+                    <li className={`list-none py-0.5 px-6 ${(router.pathname == '/your-solution' ? 'active' : '')}`}>
+                        <Link href="/your-solution">
                             <a>Make it happen</a>
                         </Link>
                     </li>
@@ -39,19 +44,19 @@ export default function Sidebar() {
             <div className='external-links w-64'>
                 <ul>
                     <li className='list-none py-0.5 px-6'>
-                        <a className='flex justify-between items-center' target={"_blank"} href="https://github.com/CondensationDS/Condensation">
+                        <a className='flex justify-between items-center' target={"_blank"} href={defaults.url.github}>
                             <span className="flex-grow">Visit our GitHub</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-</svg>
+                            <Image                                
+                                src={externalLinkIcon}
+                                alt="Link github" />  
                         </a>
                     </li>
                     <li className='list-none py-0.5 px-6'>
-                        <a className='flex justify-between items-center' target="_blank" href="https://discord.gg/9ASw6bCssg">
+                        <a className='flex justify-between items-center' target="_blank" href={defaults.url.discord}>
                             <span className="flex-grow">Join our Discord</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-</svg>
+                            <Image                                
+                                src={externalLinkIcon}
+                                alt="Link Discord" />  
                         </a>
                     </li>
                 </ul>
