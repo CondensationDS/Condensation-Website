@@ -2,14 +2,23 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import Header from './Header'
 import Sidebar from './Sidebar'
-import styles from '../styles/ContentPage.module.css'
+
+import Title from '../components/Title'
+import SubTitle from '../components/SubTitle'
+import SubSubTitle from '../components/SubSubTitle'
+
+import Description from '../components/Description'
+import Anchor from '../components/Anchor'
+import NextPage from '../components/NextPage'
+
+// import styles from '../styles/ContentPage.module.css'
 
 export default function ContentPageLayout({ children }) {
     return (
-        <div className={styles.container}>
+      <div /*className={styles.container}*/>
         <Header />
         <Navbar />
-        <div class="flex ...">
+        <div className="flex ...">
             <div className='flex-none'>
                 <Sidebar />
             </div>

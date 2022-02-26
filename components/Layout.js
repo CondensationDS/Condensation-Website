@@ -1,29 +1,24 @@
-import Footer from './Footer'
-import Navbar from './Navbar'
 import Header from './Header'
 import Sidebar from './Sidebar'
-import styles from '../styles/Home.module.css'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
-export default function Layout({ children }) {
+export default function Layout({children}) {
     return (
-      <div className={styles.container}>
-        <Header /> 
-        <Navbar />         
-        <div className='flex-none md:flex hidden h-0 md:visible sm:h-full'>
+      <div className="w-screen h-screen flex flex-col overflow-hidden">
+
+        <div className='shrink-0'>
+          <Header /> 
+          <Navbar />   
+        </div>
+
+        <div className='flex h-full'>
           <Sidebar />
-          <div className='scroll-smooth'>
-            <main className={styles.main}>
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </div>     
-        <div className='flex-none block h-full sm:hidden md:h-0'>                    
-            <main className={styles.main}>
-              {children}
-            </main>
-            <Footer />          
-        </div>      
+          <main className='w-full scroll-smooth overflow-scroll bg-gray-100'>
+            {children}
+          </main>
+        </div>   
+
       </div>
     )
 }

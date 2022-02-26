@@ -7,27 +7,27 @@ export default function Sidebar() {
             <div className='sidebar w-64'>
                 <ul>
                     <li className='list-none py-0.5 px-6'>
-                        <Link href="/What-is-condensation">
+                        <Link href="/discover">
                             <a>What is Condensation?</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/caseStudies">
+                    <li className='list-none py-0.5 px-6'>
+                        <Link href="/case-studies">
                             <a>Case studies</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/developWithCDS">
+                    <li className='list-none py-0.5 px-6'>
+                        <Link href="/get-started">
                             <a>Develop with CDS</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/meetTheTeam">
+                    <li className='list-none py-0.5 px-6'>
+                        <Link href="/about-us">
                             <a>Meet the team</a>
                         </Link>
                     </li>
-                    <li className='list-none mt-3'>
-                        <Link href="/makeItHappen">
+                    <li className='list-none py-0.5 px-6'>
+                        <Link href="/your-solution">
                             <a>Make it happen</a>
                         </Link>
                     </li>

@@ -1,7 +1,12 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    './node_modules/**/*.js',
+
+
   ],
   theme: {
     fontSize: {
@@ -18,7 +23,25 @@ module.exports = {
       '6xl': '4rem',
       '7xl': '5rem',
     },
-    extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      blue: colors.blue,
+      cyan: colors.cyan,
+      red: colors.red,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      slate: colors.slate,
+    },
+    extend: {
+      spacing: {
+        'text': '740px',
+      },
+    },
   },
   plugins: [],
 }

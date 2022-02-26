@@ -24,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/condensation.js"  ],
+, "pages/discover.jsation.js"  ],
   "exclude": [
     "node_modules"
   ]
