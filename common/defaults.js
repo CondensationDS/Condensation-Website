@@ -5,7 +5,7 @@ defaults.url.web = 'https://condensation.io'
 
 // Socials
 defaults.url.discord = 'https://discord.gg/9ASw6bCssg'
-defaults.url.github = 'https://github.com/CondensationDS'
+defaults.url.github = 'https://github.com/CondensationDS/Condensation'
 
 // Sponsors
 defaults.url.trustvalley = 'https://trustvalley.swiss/'
