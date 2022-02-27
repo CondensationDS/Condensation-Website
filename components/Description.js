@@ -1,6 +1,6 @@
 export default function Description({content}) {
     return (
-        <div className="text-xl pb-6">
+       <div className="text-container text-xl pt-16 pb-6">
             {content}
         </div>
     )

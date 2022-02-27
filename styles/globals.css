@@ -7,7 +7,24 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Lato', Helvetica Neue, sans-serif;
+  color:#383838;
 }
+
+.page-structure {
+  height:calc(100vh - 54.5px);
+}
+
+.front-page-main {
+  background: linear-gradient(60deg, #2B5CD9 0%, #5FA9EC 100%);
+  height:calc(100vh - 54.5px - 64px);
+}
+
+.front-page-main > div:first-child {
+  width:600px;
+  display:flex;
+  flex-direction: column;
+}
+
 
 a {
   color:inherit;
@@ -81,4 +98,40 @@ a {
 
 .page-content p {
   margin-bottom:16px;
+}
+
+/* TODO: simplify the two elements below with a single class */
+
+
+.text-container {
+  color:#383838;
+  max-width:800px;
+  padding-left:6rem;
+  padding-right:6rem;
+} 
+
+.page-container p {
+  color:#383838;
+  padding-top:1rem;
+  max-width:800px;
+  padding-left:6rem;
+  padding-right:6rem;
+}
+
+@media screen and (max-width: 992px) {
+
+  .text-container p {
+    max-width:100%;
+    padding-left:3rem;
+    padding-right:3rem;
+  }
+
+  .page-container p {
+    padding-top:1rem;
+    max-width:100%;
+    padding-left:3rem;
+    padding-right:3rem;
+  }
+
+
 }
