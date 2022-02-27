@@ -6,6 +6,7 @@ import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import SquaredTile from '../components/SquaredTile'
+import Contribution from '../components/Contribution'
 
 import privacy from '../assets/img/cds-data-privacy.svg'
 import integrity from '../assets/img/cds-data-integrity.svg'
@@ -18,6 +19,8 @@ import offline from '../assets/img/cds-offline-first.svg'
 import streaming from '../assets/img/cds-data-streaming.svg'
 import collaboration from '../assets/img/cds-data-collaboration.svg'
 import replication from '../assets/img/cds-data-replication.svg'
+
+import NextPage from '../components/NextPage'
 
 
 export default function CaseStudies() {  
@@ -63,6 +66,13 @@ export default function CaseStudies() {
 
       <SubTitle content="Future case studies"></SubTitle>
       <p>We have several examples of case studies and new projects in progress - if you want to learn more about it or have an idea for a case study, reach out to us at info@condensation.io.</p>
+
+
+      <div className='ml-20 mt-40 mb-12'>
+        <NextPage descripton={"Develop with CDS"} link={'/get-started'}></NextPage>
+      </div>
+
+      <Contribution></Contribution>
 
     </div>
   )

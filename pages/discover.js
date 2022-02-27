@@ -5,6 +5,9 @@ import Anchor from '../components/Anchor'
 import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
+import NextPage from '../components/NextPage'
+import Contribution from '../components/Contribution'
+
 
 export default function Discover() {  
   return (
@@ -89,6 +92,15 @@ export default function Discover() {
 
         Its a one stop solution to manage data securely from the creation to the storage.
       </p>
+
+
+
+      <div className='ml-20 mt-40 mb-12'>
+        <NextPage descripton={"Case studies"} link={'/case-studies'}></NextPage>
+      </div>
+
+      <Contribution></Contribution>
+
     </div>
   )
 }

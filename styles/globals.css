@@ -10,17 +10,21 @@ body {
   color:#383838;
 }
 
+.page-structure {
+  height:calc(100vh - 54.5px);
+}
+
 .front-page-main {
   background: linear-gradient(60deg, #2B5CD9 0%, #5FA9EC 100%);
+  height:calc(100vh - 54.5px - 64px);
 }
 
 .front-page-main > div:first-child {
-  padding-top:8rem;
   width:600px;
   display:flex;
   flex-direction: column;
-  height:calc(100vh - 54.5px - 90px);
 }
+
 
 a {
   color:inherit;
