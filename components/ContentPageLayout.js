@@ -14,23 +14,21 @@ import NextPage from '../components/NextPage'
 // import styles from '../styles/ContentPage.module.css'
 
 export default function ContentPageLayout({ children }) {
-    return (
-      <div /*className={styles.container}*/>
-        <Header />
-        <Navbar />
-        <div className="flex ...">
-            <div className='flex-none'>
-                <Sidebar />
-            </div>
-            <div className='block flex-auto'>
-            <main>
-                {children}
-            </main>
-            <Footer />
-            </div>
+  return (
+    <div /*className={styles.container}*/>
+      <Header />
+      <Navbar />
+      <div className="flex ...">
+        <div className="flex-none">
+          <Sidebar />
+        </div>
+        <div className="block flex-auto">
+          <main>{children}</main>
+          <Footer />
         </div>
       </div>
+    </div>
+  )
+}
 
-    )}
-
-    //export default ContentPageLayout;
+//export default ContentPageLayout;
