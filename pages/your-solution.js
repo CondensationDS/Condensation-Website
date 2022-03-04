@@ -6,13 +6,14 @@ import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import Contribution from '../components/Contribution'
+import Email from '../components/Email'
 
 export default function MakeItHappen() {
   return (
     <div className="page-container">
       <Title content="Make it happen"></Title>
 
-      <Description content="We propose a range of possible collaborations for organizations with the desire to discover Condenstion and build solutions to answer to their needs while contributing to an open-technology."></Description>
+      <Description content="We propose a range of possible collaborations for organizations with the desire to discover Condensation and build solutions to answer to their needs while contributing to an open-technology."></Description>
       <Anchor description="Define how to build your solution" id="#test-1"></Anchor>
       <Anchor description="Build your next-gen product" id="#test-2"></Anchor>
       <Anchor description="Raise awareness in your organization" id="#test-3"></Anchor>
@@ -112,7 +113,7 @@ export default function MakeItHappen() {
       </p>
 
       <SubTitle content="Get in touch"></SubTitle>
-      <p className="pb-20">Are you interested? Send us your request at info@condensation.io.</p>
+      <p className="pb-20">Are you interested? Send us your request at <Email></Email>.</p>
 
       <Contribution></Contribution>
     </div>
