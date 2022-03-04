@@ -7,6 +7,7 @@ import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import SquaredTile from '../components/SquaredTile'
 import Contribution from '../components/Contribution'
+import UseCases from '../components/UseCases'
 
 import privacy from '../assets/img/cds-data-privacy.svg'
 import integrity from '../assets/img/cds-data-integrity.svg'
@@ -19,6 +20,18 @@ import offline from '../assets/img/cds-offline-first.svg'
 import streaming from '../assets/img/cds-data-streaming.svg'
 import collaboration from '../assets/img/cds-data-collaboration.svg'
 import replication from '../assets/img/cds-data-replication.svg'
+
+import imageTopMessenger from '../assets/img/user-case-messenger-phone.png'
+import imageBottomMessenger from '../assets/img/user-case-messenger-person.png'
+import imageSideMessenger from '../assets/img/user-case-messenger-texting.png'
+
+import imageTopVoting from '../assets/img/user-case-voting-results.png'
+import imageBottomVoting from '../assets/img/user-case-voting-blockchain.png'
+import imageSideVoting from '../assets/img/user-case-voting-pin.png'
+
+import imageTopVehicle from '../assets/img/user-case-vehicle-map.png'
+import imageBottomVehicle from '../assets/img/user-case-vehicle-microchip.png'
+import imageSideVehicle from '../assets/img/user-case-vehicle-bike.png'
 
 import NextPage from '../components/NextPage'
 
@@ -119,6 +132,37 @@ export default function CaseStudies() {
         more please just reach out to us.
       </p>
 
+      <UseCases
+        content="An end-to-end encrypted messenger to protect the privacy of our digital conversations"
+        imageTop={imageTopMessenger}
+        altTop="phone with messenging apps"
+        imageBottom={imageBottomMessenger}
+        altBottom="shadow of a person"
+        imageSide={imageSideMessenger}
+        altSide="person texting"
+        textLeft={true}>
+      </UseCases>
+      <UseCases
+        content="An e-Voting system with data transparency to make sure our rights are respected in a digitized society"
+        imageTop={imageBottomVoting}
+        altTop="i vote pin"
+        imageBottom= {imageTopVoting}
+        altBottom="blockchain"
+        imageSide={imageSideVoting}
+        altSide="us map with voting results"
+        textLeft={false}>
+      </UseCases>
+      <UseCases
+        content="An electric vehicle smart metering to track energy and location while ensuring reduced data consumption"
+        imageTop={imageTopVehicle}
+        altTop="map with a route"
+        imageBottom={imageBottomVehicle}
+        altBottom="electronic component"
+        imageSide={imageSideVehicle}
+        altSide="moving bike"
+        textLeft={true}>
+      </UseCases> 
+
       <SubTitle content="Future case studies"></SubTitle>
       <p>
         We have several examples of case studies and new projects in progress - if you want to learn
@@ -137,3 +181,4 @@ export default function CaseStudies() {
 CaseStudies.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>
 }
+
