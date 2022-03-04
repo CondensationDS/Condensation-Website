@@ -21,6 +21,7 @@ import collaboration from '../assets/img/cds-data-collaboration.svg'
 import replication from '../assets/img/cds-data-replication.svg'
 
 import NextPage from '../components/NextPage'
+import Email from '../components/Email'
 
 export default function CaseStudies() {
   return (
@@ -122,7 +123,7 @@ export default function CaseStudies() {
       <SubTitle content="Future case studies"></SubTitle>
       <p>
         We have several examples of case studies and new projects in progress - if you want to learn
-        more about it or have an idea for a case study, reach out to us at info@condensation.io.
+        more about it or have an idea for a case study, reach out to us at <Email></Email>.
       </p>
 
       <div className="ml-20 mt-40 mb-12">

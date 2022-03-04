@@ -7,6 +7,7 @@ import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import NextPage from '../components/NextPage'
 import Contribution from '../components/Contribution'
+import Email from '../components/Email'
 
 export default function MeetOurTeam() {
   return (
@@ -81,7 +82,7 @@ export default function MeetOurTeam() {
 
       <SubSubTitle content="Email"></SubSubTitle>
       <p>
-        If you want to share project requirements, please send your message to info@condensation.io
+        If you want to share project requirements, please send your message to <Email></Email>&nbsp;
         to directly get it addressed to CDS team.
       </p>
 
