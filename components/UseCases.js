@@ -1,32 +1,36 @@
 import Image from 'next/image'
 
-export default function UseCases(content, imageTop, imageBottom, imageSide, altTop, altBottom, altSide, textLeft) {
-    const text = <p className='text-xl lg:text-2xl mx-10 my-10 lg:my-auto'> 
+export default function UseCases({content, imageTop, altTop, imageBottom, altBottom, imageSide, altSide, textLeft}) {
+    const text = <h1 className='use-cases-title font-bold text-3xl px-10 my-7 xl:my-auto'> 
                     {content}
-                </p>
-    const images = <div className='flex p-10 justify-center'>
-                        <div className='basis-60'>
-                            <Image 
-                                src={imageTop}
-                                alt={altTop} />
-                            <Image 
-                                src={imageBottom}
-                                alt={altBottom} />
+                </h1>
+
+    let leftImages = <div className='flex flex-col my-auto'>
+                        <div className='pb-7'> 
+                            <Image src={imageTop} alt={altTop} height='285px' />
                         </div>
-                        <div className='basis-60 ml-10'>
-                            <Image 
-                                src={imageSide}
-                                alt={altSide} />
-                        </div>
+                        <div className='flex'>
+                            <Image src={imageBottom} alt={altBottom} height='285px' />
+                        </div> 
                     </div>
-    const [first, second] = textLeft
-        ? [text, images]
-        : [images, text]
+
+    let rightImage = <div className='flex p-10'>
+                        <Image src={imageSide} alt={altSide} height='600px' width='300px' />
+                    </div>
+
+    const [firstImage, secondImage] = textLeft ? [leftImages, rightImage] : [rightImage, leftImages]
+
+    const images = <div className='flex items-center mx-auto'>
+                        {firstImage}
+                        {secondImage}
+                    </div>
+
+    const [firstElem, secondElem] = textLeft ? [text, images] : [images, text]
 
     return(
-        <div className='bg-[#EAEAEA] flex flex-col lg:flex-row mr-14 my-20'> 
-            {first}
-            {second}
+        <div className='use-cases-container bg-gray-200 flex flex-col xl:flex-row my-20 ml-24 mr-14'> 
+            {firstElem}
+            {secondElem}
          </div> 
     )
 }
