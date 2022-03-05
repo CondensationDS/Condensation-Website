@@ -4,7 +4,6 @@ import Button from '../components/Button'
 import epfl from '../assets/img/logos/logo-sponsor-epfl.svg'
 import trust from '../assets/img/logos/logo-sponsor-trust-valley.svg'
 import vaud from '../assets/img/logos/logo-sponsor-spei.svg'
-import illustration from '../assets/img/cds-illustration.png'
 import defaults from '../common/defaults.js'
 
 export default function Home() {
