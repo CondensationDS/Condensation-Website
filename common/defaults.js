@@ -3,6 +3,9 @@ const defaults = {}
 defaults.url = {}
 defaults.url.web = 'https://condensation.io'
 
+// email
+defaults.email = 'info@condensation.io'
+
 // Socials
 defaults.url.discord = 'https://discord.gg/9ASw6bCssg'
 defaults.url.github = 'https://github.com/CondensationDS/Condensation'

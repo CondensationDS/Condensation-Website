@@ -4,14 +4,13 @@ import Button from '../components/Button'
 import epfl from '../assets/img/logos/logo-sponsor-epfl.svg'
 import trust from '../assets/img/logos/logo-sponsor-trust-valley.svg'
 import vaud from '../assets/img/logos/logo-sponsor-spei.svg'
-import illustration from '../assets/img/cds-illustration.png'
 import defaults from '../common/defaults.js'
 
 export default function Home() {
   return (
-    <div className="front-page-main pl-24 flex flex-col">
+    <div className="front-page-main flex flex-col pl-5 pr-5 lg:pl-24">
       <div>
-        <h1 className="text-3xl text-white pt-32 leading-snug">
+        <h1 className="text-2xl lg:text-3xl text-white pt-20 lg:pt-32 leading-snug">
           Condensation is an <strong>open-source</strong> project disrupting how we create
           applications to match the challenges of the era of data.
         </h1>

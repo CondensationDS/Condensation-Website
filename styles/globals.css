@@ -20,11 +20,10 @@ body {
 }
 
 .front-page-main > div:first-child {
-  width:600px;
+  max-width:600px;
   display:flex;
   flex-direction: column;
 }
-
 
 a {
   color:inherit;
@@ -33,6 +32,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.sidebar {
+  background: #fff;
 }
 
 .sidebar li {
@@ -77,61 +80,40 @@ a {
 
 
 .page-title {
-  height:16rem;
-  padding-left: 6rem;
   padding-bottom: 3rem;
   padding-right: 3rem;
-  font-size: 3rem;
   color:white;
   background: linear-gradient(45deg, #2B5CD9 0%, #5FA9EC 100%);
   display:flex;
   align-items: flex-end;
 }
 
-.page-content {
-  width:720px;
-  padding-left: 6rem;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  color:#383838;
-}
-
-.page-content p {
-  margin-bottom:16px;
-}
-
-/* TODO: simplify the two elements below with a single class */
-
-
 .text-container {
   color:#383838;
   max-width:800px;
-  padding-left:6rem;
-  padding-right:6rem;
+  margin-right:15px;
 } 
 
 .page-container p {
   color:#383838;
   padding-top:1rem;
   max-width:800px;
-  padding-left:6rem;
-  padding-right:6rem;
+  margin-right: 30px;
 }
 
-@media screen and (max-width: 992px) {
+.card {
+  width: 100%;
+  margin-right: 25px;
+}
 
-  .text-container p {
-    max-width:100%;
-    padding-left:3rem;
-    padding-right:3rem;
-  }
+.use-cases-container{
+  max-width:1100px;
+}
 
-  .page-container p {
-    padding-top:1rem;
-    max-width:100%;
-    padding-left:3rem;
-    padding-right:3rem;
-  }
+.use-cases-title{
+  max-width: 480px;
+}
 
-
+.mail {  
+  text-decoration: underline;
 }
