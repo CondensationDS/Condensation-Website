@@ -8,9 +8,9 @@ import defaults from '../common/defaults.js'
 
 export default function Home() {
   return (
-    <div className="front-page-main flex flex-col pl-5 pr-5 lg:pl-24">
+    <div className="front-page-main flex flex-col pl-5 pr-5 sm:pl-24">
       <div>
-        <h1 className="text-2xl lg:text-3xl text-white pt-20 lg:pt-32 leading-snug">
+        <h1 className="text-2xl sm:text-3xl text-white pt-20 lg:pt-32 leading-snug">
           Condensation is an <strong>open-source</strong> project disrupting how we create
           applications to match the challenges of the era of data.
         </h1>
