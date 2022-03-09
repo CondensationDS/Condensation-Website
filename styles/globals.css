@@ -126,6 +126,11 @@ a {
   max-width: 480px;
 }
 
+.error-page{
+  background: linear-gradient(60deg, #2B5CD9 0%, #5FA9EC 100%);
+}
+
+
 @media screen and (max-width: 992px) {
 
   .text-container p {
