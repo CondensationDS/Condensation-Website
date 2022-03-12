@@ -21,153 +21,168 @@ import streaming from '../assets/img/cds-data-streaming.svg'
 import collaboration from '../assets/img/cds-data-collaboration.svg'
 import replication from '../assets/img/cds-data-replication.svg'
 
-import imageTopMessenger from '../assets/img/user-case-messenger-phone.png'
-import imageBottomMessenger from '../assets/img/user-case-messenger-person.png'
-import imageSideMessenger from '../assets/img/user-case-messenger-texting.png'
+import imageTopMessenger from '../assets/img/use-case-messenger-phone.png'
+import imageBottomMessenger from '../assets/img/use-case-messenger-person.png'
+import imageSideMessenger from '../assets/img/use-case-messenger-texting.png'
 
-import imageTopVoting from '../assets/img/user-case-voting-results.png'
-import imageBottomVoting from '../assets/img/user-case-voting-blockchain.png'
-import imageSideVoting from '../assets/img/user-case-voting-pin.png'
+import votingPin from '../assets/img/use-case-voting-pin.png'
+import votingResults from '../assets/img/use-case-voting-results.png'
+import votingBlockchain from '../assets/img/use-case-voting-blockchain.png'
 
-import imageTopVehicle from '../assets/img/user-case-vehicle-map.png'
-import imageBottomVehicle from '../assets/img/user-case-vehicle-microchip.png'
-import imageSideVehicle from '../assets/img/user-case-vehicle-bike.png'
+import imageTopVehicle from '../assets/img/use-case-vehicle-map.png'
+import imageBottomVehicle from '../assets/img/use-case-vehicle-microchip.png'
+import imageSideVehicle from '../assets/img/use-case-vehicle-bike.png'
 
 import NextPage from '../components/NextPage'
 
 export default function CaseStudies() {
   return (
     <div className="page-container">
-      <Title content="Case studies"></Title>
+      <Title 
+      content="Use-cases"
+      title="Making your app ready for the era of data."
+      />
 
-      <Description content="We’re developing case studies to explore the adoption and implementation of Condensation in products and IT infrastructures."></Description>
-      <Anchor description="Success factors while adopting CDS" id="#test-1"></Anchor>
-      <Anchor description="Use-cases we realized" id="#test-2"></Anchor>
-      <Anchor description="Future case studies" id="#test-3"></Anchor>
+<SubTitle 
+        content="Success factors"
+        title="Condensation builds collaborative products which protect people's privacy and enhance the economy of trust."
+      />
 
-      <SubTitle content="Success factors while adopting CDS"></SubTitle>
-      <p>
-        Many new capabilities spawn when shifting from a centralized solution to CDS. It impacts the
-        person using the solution as he benefit from owning its data - which mean only him decide
-        who can see its data and can verify it and where it is stored. It also impacts service
-        providers as they can build their IT infrastructure with flexibility to scale their offering
-        and answer to the intensive data usage.
-      </p>
-
-      <SubSubTitle content="Protecting privacy and digital truth"></SubSubTitle>
-      <p>
-        CDS is made by design with data control and certification which are pillars for building
-        digital products capable of giving guarantees of trust and privacy.
-      </p>
+      <div className='text-container text-2xl mt-16 mb-4 text-gray-700'>
+        <h3 className='text-blue-600 inline-block font-bold'>
+          Making data ownership a reality.
+        </h3> 
+        Build your solution with data control and certification which are pillars for getting connected with trust and without intermediaries.
+      </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
         <SquaredTile
           title="End-to-end privacy"
           subtitle="to protect secrets and personal data"
           icon={privacy}
+          color={"blue"}
         ></SquaredTile>
         <SquaredTile
           title="Digital truth"
           subtitle="to verify the data has not been altered"
           icon={integrity}
+          color={"blue"}
         ></SquaredTile>
         <SquaredTile
           title="Digital signature"
           subtitle="to trust the origin of received data"
           icon={signature}
+          color={"blue"}
         ></SquaredTile>
       </div>
 
-      <SubSubTitle content="Getting decentralized"></SubSubTitle>
-      <p>
-        The infrastructure of the applications we design are evolving to extend the traditional use
-        of a centralized cloud service. CDS provide the tools to distribute data among multiple
-        entities as for example to build international platforms or IoT networks.
-      </p>
+      <div className='text-container text-2xl mt-24 mb-8 text-gray-700'>
+        <h3 className='text-purple-600 inline-block font-bold'>
+          Breaking centralization constraints.
+        </h3> 
+        Distribute data where you want it to be and connect multiple actors and devices in the network of your solution.
+      </div>
+
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
-        <SquaredTile
-          title="Relocating storage"
-          subtitle="for scaling while ensuring sovereignty"
-          icon={distribution}
-        ></SquaredTile>
         <SquaredTile
           title="Connecting objects"
           subtitle="with security and low data consumption"
           icon={iot}
+          color={"purple"}
         ></SquaredTile>
         <SquaredTile
           title="Working offline"
           subtitle="for mobility and independence"
           icon={offline}
+          color={"purple"}
+        ></SquaredTile>
+        <SquaredTile
+          title="Relocating storage"
+          subtitle="for scaling while ensuring sovereignty"
+          icon={distribution}
+          color={"purple"}
         ></SquaredTile>
       </div>
 
-      <SubSubTitle content="Building applications with intensive data consumption"></SubSubTitle>
-      <p>
-        CDS is a solution designed for efficient and conflict-free synchronization in a distributed
-        configuration for any type of user.
-      </p>
+      <div className='text-container text-2xl mt-24 mb-4'>
+        <h3 className='text-rose-600 inline-block font-bold'>
+          Getting ready for data intensiveness.
+        </h3> 
+        Enable collaboration on data and manage data transfers without impacting your solution performances.
+      </div>
+
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
         <SquaredTile
           title="Streaming"
           subtitle="with efficient upload of data in live"
           icon={streaming}
+          color={"rose"}
         ></SquaredTile>
         <SquaredTile
           title="Collaborating"
           subtitle="with simultaneous edition of data"
           icon={collaboration}
+          color={"rose"}
         ></SquaredTile>
         <SquaredTile
           title="Replicating"
           subtitle="without sharing redundancies"
           icon={replication}
+          color={"rose"}
         ></SquaredTile>
       </div>
 
-      <SubTitle content="Use-cases we realized"></SubTitle>
-      <p>
-        Together with our first partners we realized the following applications using Condensation.
-        We are preparing articles to present how they have been realized but if you want to learn
-        more please just reach out to us.
-      </p>
+      <div className='text-container text-3xl mt-24 mb-32 font-bold text-black'>
+        All by design, with flexibility and scalability, to let your project evolve without limitations.
+      </div>
+
+      <SubTitle 
+      content="Products we realized"
+      title=" Together with our contributing partners, we created web, mobile and IoT applications awarded for their innovative features."
+      />
+
+      <div className='mt-20'></div>
 
       <UseCases
-        content="An end-to-end encrypted messenger to protect the privacy of our digital conversations"
-        imageTop={imageTopMessenger}
-        altTop="phone with messenging apps"
-        imageBottom={imageBottomMessenger}
-        altBottom="shadow of a person"
-        imageSide={imageSideMessenger}
-        altSide="person texting"
-        textLeft={true}>
-      </UseCases>
-      <UseCases
-        content="An e-Voting system with data transparency to make sure our rights are respected in a digitized society"
-        imageTop={imageBottomVoting}
-        altTop="i vote pin"
-        imageBottom= {imageTopVoting}
-        altBottom="blockchain"
-        imageSide={imageSideVoting}
-        altSide="us map with voting results"
-        textLeft={false}>
-      </UseCases>
-      <UseCases
-        content="An electric vehicle smart metering to track energy and location while ensuring reduced data consumption"
+        content="A smart metering system to track electric vehicles while ensuring reduced data consumption."
         imageTop={imageTopVehicle}
         altTop="map with a route"
         imageBottom={imageBottomVehicle}
         altBottom="electronic component"
         imageSide={imageSideVehicle}
         altSide="moving bike"
-        textLeft={true}>
+        awards={["Awarded by TheArk foundation,",
+               "Granted by Act for Change sustainability program,",
+               "Finalist of Start contest and BCVs creators contest."]}>
       </UseCases> 
 
-      <SubTitle content="Future case studies"></SubTitle>
-      <p>
-        We have several examples of case studies and new projects in progress - if you want to learn
-        more about it or have an idea for a case study, reach out to us at info@condensation.io.
-      </p>
+      <UseCases
+        content="An e-Voting system with data transparency to make sure our rights are respected in a digitized society."
+        imageTop={votingResults}
+        altTop="US map with voting results."
+        imageBottom= {votingBlockchain}
+        altBottom="Blockchain illustration."
+        imageSide={votingPin}
+        altSide="I voted pin."
+        awards={["Awarded by EPFL ignition grant."]}>
+      </UseCases>
+
+      <UseCases
+        content="An end-to-end encrypted messenger to protect the privacy of our digital conversations."
+        imageTop={imageTopMessenger}
+        altTop="Phone with messenging apps."
+        imageBottom={imageBottomMessenger}
+        altBottom="Shadow of a person."
+        imageSide={imageSideMessenger}
+        altSide="Person texting."
+        awards={["Awarded by EPFL XGrant program,",
+                "Awarded by the french embassy in Switerland,",
+                "Received by Swissnex in San Francisco."]}>
+      </UseCases>
+
+      <div className='text-container text-3xl mt-24 mb-32 font-bold text-black'>
+        Do you want to learn more about our past and ongoing projects? <span className='underline text-blue-500 underline-offset-8'>Contact us</span>.
+      </div>
 
       <div className="ml-20 mt-40 mb-12">
         <NextPage descripton={'Develop with CDS'} link={'/get-started'}></NextPage>

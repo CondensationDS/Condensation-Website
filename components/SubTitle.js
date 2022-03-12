@@ -1,7 +1,14 @@
-export default function SubTitle({ content }) {
+export default function SubTitle({ content, title }) {
   return (
-    <h2 className="text-container text-3xl font-bold pt-24" id={content}>
-      {content}
-    </h2>
+    <div>
+        <div className='bg-gray-200 h-px my-6'></div>
+        <div className="pt-24 text-container">
+            <div className="font-bold text-lg">{content}</div>
+            <h2 className="text-black text-3xl font-bold" id={content}>
+                {title}
+            </h2>
+        </div>
+    </div>
+
   )
 }

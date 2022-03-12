@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Lato', Helvetica Neue, sans-serif;
-  color:#383838;
+  color:#666666;
 }
 
 .page-structure {
@@ -36,8 +36,6 @@ a {
 }
 
 .sidebar li {
-  font-weight: 700;
-  color: #505050;
   transition:all 0.3s ease;
 }
 
@@ -49,11 +47,12 @@ a {
 
 .sidebar li:active, .active {
   border-left: 6px solid #5FA9EC;
+  color: #000000;
+  font-weight: 700;
 }
 
 .external-links li {
-  font-weight: 700;
-  color: #505050;
+  color: #666666;
   transition:all 0.3s ease;
 }
 
@@ -71,7 +70,6 @@ a {
 
 .head-content {
   font-weight: lighter;
-  color: #383838;
   background: linear-gradient(60deg, #2B5CD9 0%, #5FA9EC 100%)
 }
 
@@ -94,6 +92,7 @@ a {
   padding-top: 4rem;
   padding-bottom: 3rem;
   color:#383838;
+  overflow: visible;
 }
 
 .page-content p {
@@ -104,26 +103,17 @@ a {
 
 
 .text-container {
-  color:#383838;
   max-width:800px;
   padding-left:6rem;
   padding-right:6rem;
 } 
 
 .page-container p {
-  color:#383838;
+  color:#666666;
   padding-top:1rem;
   max-width:800px;
   padding-left:6rem;
   padding-right:6rem;
-}
-
-.use-cases-container{
-  max-width:1100px;
-}
-
-.use-cases-title{
-  max-width: 480px;
 }
 
 @media screen and (max-width: 992px) {

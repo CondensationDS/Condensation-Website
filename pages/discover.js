@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Image from 'next/image'
 
 import Description from '../components/Description'
 import Anchor from '../components/Anchor'
@@ -8,87 +9,128 @@ import SubSubTitle from '../components/SubSubTitle'
 import NextPage from '../components/NextPage'
 import Contribution from '../components/Contribution'
 
+
+import devices from '../assets/img/cds-client-first.svg'
+import message from '../assets/img/cds-secured-document.svg'
+import store from '../assets/img/cds-secured-storage.svg'
+
+
 export default function Discover() {
   return (
     <div className="page-container">
-      <Title content="What is Condensation?"></Title>
 
-      <Description content="CDS - short for Condensation Data-System, is an open-source project for building secure and efficient applications in a distributed system. Inspired the immutability of the Blockchain, the merging of git and the communication of the email system, CDS is an easy-to-use tool that gives people full ownership of their data."></Description>
-      <Anchor description="Overview" id="#test-1"></Anchor>
-      <Anchor description="How Condensation works?" id="#test-2"></Anchor>
-      <Anchor description="Who benefit from CDS?" id="#test-3"></Anchor>
+      <Title 
+        content="What is Condensation?" 
+        title="A system made for data trust and ownership."
+      />
 
-      <SubTitle content="Overview"></SubTitle>
-      <SubSubTitle content="A lightweight data-system"></SubSubTitle>
-      <p>
-        The complete lifecycle of data can be managed with CDS, that’s why it is called a
-        data-system. It is organised in three lightweight modules to efficiently manage the data in
-        the application, transport it while ensuring end-to-end security and storing it without
-        centralization constraints.
-      </p>
+      <SubTitle 
+        content="Overview"
+        title="CDS is an industry oriented technology to adopt data distribution and cybersecurity without doubts on being the first mover."
+      />
 
-      <SubSubTitle content="Which foster decentralization"></SubSubTitle>
-      <p>
-        Condensation follows the concept of trustless system, it means people can exchange
-        information with each other without having to trust intermediaries such as providers of data
-        transport channels or cloud infrastructures. Given that, applications can scale with
-        flexibility by distributing data where it ensures better performances and security.
-      </p>
+      <div className="flex flex-wrap px-24 pt-16 pb-24 gap-20">
 
-      <SubSubTitle content="Being open-source"></SubSubTitle>
-      <p>
-        The core technology of Condensation is now mature and we believe it will benefit to many
-        developers. The code is available under an open licence and we are actively working on
-        facilitating the adoption of the technology by sharing the knowledge of the project and
-        building developer tools. We welcome any individual or company who wants to contribute to
-        our mission.
-      </p>
+        <div className="max-w-sm basis-120">
 
-      <SubTitle content="How Condensation works?"></SubTitle>
-      <SubSubTitle content="Managing the data where it is created"></SubSubTitle>
-      <p>
-        With CDS, the data is computed in two ways with the principle to move the compute to where
-        the data is - and not to move the data in centralized infrastructures. First, the data
-        concerning an account is managed directly on the device of the person using an application,
-        in order to ensure his data is only read there and his privacy is respected. Secondly, only
-        the data to produce analytics or business services can be shared seperately to indexing
-        servers which can eventually be queried.
-      </p>
-      <p>
-        It makes a clear distinction of data as being personal and totally under the control of the
-        owner, or private and under the control of a trusted company, or simply public. Multiple
-        roles can be defined to decide how to move the data which gives flexibility.
-      </p>
+          <h3 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>
+            A lightweight and open-source code base.  
+          </h3>
+          <div className='pt-4'>
+            You can use Condensation for commercial purpose for free,
+            it is organised in lightweight modules which can be audited by a single person. 
+            Moreover, it can be customized with new implementations for specific purposes such as preferred encryption methods or pre-defined conflict resolution rules.
+          </div>
 
-      <SubSubTitle content="Protecting the data itself"></SubSubTitle>
-      <p>
-        With CDS, when someone send data he can ensure only the receiver can unlock the information
-        from his device to read it. Moreover, before to be sent, the data is locked into a structure
-        which cannot be modified without leaving a tamper. It provides an automatic verification of
-        data to know it has not been altered and it comes from the right person.
-      </p>
-      <p>
-        By design, privacy of people is respected and same goes for companies, which can manage
-        confidential information without exposing themselves to risk of data breaches on the storage
-        or on the network.
-      </p>
+        </div>
 
-      <SubSubTitle content="Storing data without constraints"></SubSubTitle>
-      <p>
-        With CDS, each person having an account for an application can decide where they want to
-        store their own data - it could be in a server at their home or in a Cloud service located
-        in their country. As the data itself is protected, it can be stored with less concerns about
-        the security of the storage device.
-      </p>
-      <p>
-        Similarly, the provider of an application can decide with flexibility where the data will
-        flow independently if the network is secured or not, or if the transmission channel is
-        stable or gets interrupted. It makes the system robust, even if the network isn’t trusted.
-      </p>
+        <div className="max-w-sm basis-120">
 
-      <SubTitle content="Who benefit from CDS?"></SubTitle>
+          <h3 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>Generic to build tailored solutions.</h3>
+            <div className='pt-4'>
+              You can manage the complete lifecycle of data with Condensation, that’s why it is called a data-system. 
+              It excels with synchronization performances in a fully distributed setup, provides a single protocol to connect multiple devices with end-to-end data security,
+              and stores data without centralization constraints.
+            </div>
+
+        </div>
+
+          <div className="max-w-sm basis-120">
+
+            <h3 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>Secured with market proven algorithms.</h3>
+            <div className='pt-4'>
+              The implementation is independent from dependencies and use basic cryptographic primitives extracted from challenged open-source projects. 
+              Moreover, the choice of the algorithms fits to nowadays device capabilities to ensure run time performances that fits to connected objects, or high speed execution of apps.
+            </div>
+
+          </div>
+
+          <div className="max-w-sm basis-120">
+
+            <h3 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>Compliant with regulations.</h3>
+            <div className='pt-4'>
+              Condensation fits to GDPR and other data privacy and protection regulations. 
+              Besides the inherent security and the capacity to certify data, it makes a clear statement on who is responsible of the data and where it stored. 
+              Thus, data protection and ownership is part of the technology and not of complex mitigations.
+            </div>
+
+          </div>
+
+      </div>
+
+
+      <SubTitle 
+        content="Guiding principles"
+        />
+
+      <div className="flex flex-nowrap px-24 pb-20 gap-20">
+
+        <div className="flex-1 rounded-lg py-12">
+
+          <div className="h-20 w-24 mb-6 flex align-center">
+            <Image width="100%" height="100%" objectFit="contain" src={devices} alt="Connected devices"></Image>
+          </div>
+          <h3 className='text-2xl font-bold text-black'>Managing the data where it is created.</h3>
+          <div className='pt-4'>
+            CDS avoids moving data to centralized infrastructures by computing it directly where it is created, reducing this way the data transmission efforts. CDS can select the piece of data to share with indexing servers, limiting it, for example, to data intended to produce analyses or commercial services.
+          </div>
+
+        </div>
+
+
+        <div className="flex-1 rounded-lg py-12">
+          <div className="h-20 w-24 mb-6 flex align-center">
+            <Image width="100%" height="100%" objectFit="contain" src={message} alt="Secured message"></Image>
+          </div>
+          <h3 className='text-2xl font-bold text-black'>Protecting the data itself from end-to-end.</h3>
+          <div className='pt-4'>
+            CDS secures individuals and companies privacy by design. When data is shared, CDS ensures that only the recipient can decrypt and read it on their device. Moreover, before being sent, the data is structured in an object that cannot be modified without leaving a trace. Thus, the emitter’s data is secured and is totally trustworthy for the recipient.
+          </div>
+
+        </div>
+
+        <div className="flex-1 rounded-lg py-12">
+
+          <div className="h-20 w-20 mb-6 flex align-center">
+            <Image width="100%" height="100%" objectFit="contain" src={store} alt="Secured database"></Image>
+          </div>
+
+          <h3 className='text-2xl font-bold text-black'>Storing data anywhere without constraints.</h3>
+          <div className='pt-4'>
+            Each account could decide where to store its data - for example on a server at home, or in a cloud service located in their country. Because the data remains encrypted at all times, the storage security is no longer an issue. 
+          </div>
+
+        </div>
+
+      </div>
+
+      <SubTitle 
+        content="Who benefit from CDS?"
+        title="CDS creates a collaborative network connecting people, companies and objects without trusting intermediaries."
+      />
+
       <SubSubTitle content="People and companies using applications"></SubSubTitle>
-      <p>
+      <div className='text-container'>
         CDS started with a statement - the data concerning people should remain in their ownership.
         And this concept of data ownership is realized with the following capabilities :
         <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
@@ -98,10 +140,10 @@ export default function Discover() {
           <li>I can collaborate on data without intermediaries.</li>
         </ul>
         It gives real ownership of data while being able to interact with others efficiently.
-      </p>
+      </div>
 
       <SubSubTitle content="System administrators mainting IT infrastructures"></SubSubTitle>
-      <p>
+      <div className='text-container'>
         CDS is protects the data itself and so the person managing the infrastructure where the data
         flow and where the data is stored don’t have risks to compromise the data with the following
         :
@@ -112,10 +154,10 @@ export default function Discover() {
           <li>I can replicate data efficiently.</li>
         </ul>
         It creates a system where there is no need to trust the IT infrastructure.
-      </p>
+      </div>
 
       <SubSubTitle content="Developers building applications"></SubSubTitle>
-      <p>
+      <div className='text-container'>
         CDS simplifies the development of distributed applications. It provides an interface in the
         form of a document which is known as a flexible data structuring tool. The core algorithm
         automatically manage the encrytion and efficient synchronisation of data and give to the
@@ -129,7 +171,7 @@ export default function Discover() {
           <li>I can connect multiple devices or services using a single protocol.</li>
         </ul>
         Its a one stop solution to manage data securely from the creation to the storage.
-      </p>
+      </div>
 
       <div className="ml-20 mt-40 mb-12">
         <NextPage descripton={'Case studies'} link={'/case-studies'}></NextPage>

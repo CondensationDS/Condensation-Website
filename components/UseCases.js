@@ -1,36 +1,33 @@
 import Image from 'next/image'
 
-export default function UseCases({content, imageTop, altTop, imageBottom, altBottom, imageSide, altSide, textLeft}) {
-    const text = <h1 className='use-cases-title font-bold text-3xl px-10 my-7 xl:my-auto'> 
-                    {content}
-                </h1>
-
-    let leftImages = <div className='flex flex-col my-auto'>
-                        <div className='pb-7'> 
-                            <Image src={imageTop} alt={altTop} height='285px' />
-                        </div>
-                        <div className='flex'>
-                            <Image src={imageBottom} alt={altBottom} height='285px' />
-                        </div> 
-                    </div>
-
-    let rightImage = <div className='flex p-10'>
-                        <Image src={imageSide} alt={altSide} height='600px' width='300px' />
-                    </div>
-
-    const [firstImage, secondImage] = textLeft ? [leftImages, rightImage] : [rightImage, leftImages]
-
-    const images = <div className='flex items-center mx-auto'>
-                        {firstImage}
-                        {secondImage}
-                    </div>
-
-    const [firstElem, secondElem] = textLeft ? [text, images] : [images, text]
+export default function UseCases({content, imageTop, altTop, imageBottom, altBottom, imageSide, altSide, awards}) {
 
     return(
-        <div className='use-cases-container bg-gray-200 flex flex-col xl:flex-row my-20 ml-24 mr-14'> 
-            {firstElem}
-            {secondElem}
+        <div className='max-w-5xl bg-stone-100 flex items-center flex-col xl:flex-row mb-12 ml-24 mr-14'> 
+
+            <div className={"max-w-md flex flex-col content-start pl-12 my-6 xl:my-auto"}>
+                <h3 className={'text-stone-900 font-bold leading-snug text-3xl'}> 
+                    {content}
+                </h3>
+                <div className='mt-4 whitespace-pre-wrap'>
+                    {awards.join("\n")}
+                </div>
+            </div>
+
+            <div className='flex p-10 order-2'>
+                <Image src={imageSide} alt={altSide} height='610px' width='300px' />
+            </div>
+
+            <div className='flex flex-col my-auto order-2 mr-10'>
+                
+                <div className='pb-10'> 
+                    <Image src={imageTop} alt={altTop} height='285px' />
+                </div>
+                <div className='flex'>
+                    <Image src={imageBottom} alt={altBottom} height='285px' />
+                </div> 
+            </div>
+
          </div> 
     )
 }
