@@ -12,22 +12,20 @@ export default function MakeItHappen() {
     <div className="page-container">
       <Title 
         content="Envision your solution"
-        title=""
+        title="Distribution of data in now in your hands."
       />
 
-      <Description content="We propose a range of possible collaborations for organizations with the desire to discover Condenstion and build solutions to answer to their needs while contributing to an open-technology."></Description>
-      <Anchor description="Define how to build your solution" id="#test-1"></Anchor>
-      <Anchor description="Build your next-gen product" id="#test-2"></Anchor>
-      <Anchor description="Raise awareness in your organization" id="#test-3"></Anchor>
-      <Anchor description="Get in touch" id="#test-3"></Anchor>
-
-      <SubTitle content="Define how to build your solution"></SubTitle>
+      <SubTitle 
+        content="Conception"
+        title="We can help you to analyse how CDS can advantage your use-case and to define the requirements for building your solution."
+        />
       <p>
-        Are you interested in adopting distributed technologies? We propose to guide you in the
+
+        Are you interested in adopting data distribution? We propose to guide you in the
         analysis of your use-case with the support of engineers and experienced developers.
       </p>
 
-      <SubTitle content="Defining your success factors"></SubTitle>
+      <SubSubTitle content="Defining your success factors."/>
       <p>
         We analyze with you how managing data with a distributed technology can positively impact
         your activities and align with the strategic vision of your organization. The solutions you
@@ -41,18 +39,24 @@ export default function MakeItHappen() {
         Learn more about what you can do with CDS by reading our case-studies section.
       </p>
 
-      <SubSubTitle content="Conceptualizing your solution"></SubSubTitle>
+      <SubSubTitle content="Specifying your solution's foundations."></SubSubTitle>
       <p>
-        We believe that developing a new technology like CDS is only possible through its
-        application to real world projects. Therefore we offer to contribute to the development of
-        your solution.
+        We conceptualize your decentralized solution by drawing an architecture diagram and structure of your data in the right schema. In addition, we can advise you on the compatible choices of hardware and/or dependencies to ensure the efficiency and security of your solution. It will give you a clear understanding of how to build your solution and to estimate its budget.
       </p>
 
-      <SubTitle content="Build your next-gen product"></SubTitle>
-      <p>
-        You believe in CDS? Make it grow with us! We encourage invidual and companies to get
-        involved and join our emerging community, you can contact us with the following.
+
+      <SubSubTitle content="Planning the transformation of your existing solution."></SubSubTitle>
+      <p className='mb-32'>
+        We identify the shortfalls of your existing solution to map which element can get the
+        benefits the most from CDS enablements. Through a roadmap we propose a step-by-step approach
+        to transform your product while ensuring your running operations. We define increments with
+        pragmatic solutions which can be merged with your product.
       </p>
+
+
+      <SubTitle 
+        content="Development"
+        title="We can stand as technical experts to support your software developement."/>
 
       <SubSubTitle content="Demonstrate your product feasibility"></SubSubTitle>
       <p>
@@ -64,22 +68,18 @@ export default function MakeItHappen() {
       </p>
 
       <SubSubTitle content="Develop and maintain your product"></SubSubTitle>
-      <p>
+      <p className='mb-32'>
         We can build an agile project with you to dynamically adapt to your priorities and the
         opportunities you want to take advantage of. For most complex projects we combine CDS
         expertizes with development companies’s workforce in order to make your product grow in the
-        long term. We are partnered with well-known development companies in Switzerland.
+        long term. We are partnered with best in class development companies in Switzerland.
       </p>
 
-      <SubSubTitle content="Transform your existing solution"></SubSubTitle>
-      <p>
-        We identify the shortfalls of your existing solution to map which element can get the
-        benefits the most from CDS enablements. Through a roadmap we propose a step-by-step approach
-        to transform your product while ensuring your running operations. We define increments with
-        pragmatic solutions which can be merged with your product.
-      </p>
 
-      <SubTitle content="Raise awareness in your organization"></SubTitle>
+      <SubTitle 
+        content="Initiation"
+        title="You believe in the project, but your organization is not there yet? We can work together to raise awareness."
+        />
       <p>
         We think that meeting people is the best way to enhance innovation and create a community
         around a growing technology. Thus, we propose to animate a keynote introductory event to
@@ -114,8 +114,9 @@ export default function MakeItHappen() {
         approach to build distibuted solutions.
       </p>
 
-      <SubTitle content="Get in touch"></SubTitle>
-      <p className="pb-20">Are you interested? Send us your request at info@condensation.io.</p>
+      <div className='text-container text-3xl mt-24 mb-32 font-bold text-black'>
+        Do you have a project in mind? <span className='underline text-blue-500 underline-offset-8'>Contact us</span>.
+      </div>
 
       <Contribution></Contribution>
     </div>
