@@ -48,11 +48,8 @@ export default function CaseStudies() {
         title="Condensation builds collaborative products which protect people's privacy and enhance the economy of trust."
       />
 
-      <div className='text-container text-2xl mt-16 mb-4 text-gray-700'>
-        <h3 className='text-blue-600 inline-block font-bold'>
-          Making data ownership a reality.
-        </h3> 
-        Build your solution with data control and certification which are pillars for getting connected with trust and without intermediaries.
+      <div className='text-container text-2xl mt-16 mb-4'>
+        <h3 className='text-blue-600 inline-block font-bold'>Making data ownership a reality.</h3> Build your solution with data control and certification which are pillars for getting connected with trust and without intermediaries.
       </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
@@ -76,11 +73,8 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className='text-container text-2xl mt-24 mb-8 text-gray-700'>
-        <h3 className='text-purple-600 inline-block font-bold'>
-          Breaking centralization constraints.
-        </h3> 
-        Distribute data where you want it to be and connect multiple actors and devices in the network of your solution.
+      <div className='text-container text-2xl mt-24 mb-8'>
+        <h3 className='text-purple-600 inline-block font-bold'>Breaking centralization constraints.</h3> Distribute data where you want it to be and connect multiple actors and devices in the network of your solution.
       </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
@@ -106,9 +100,7 @@ export default function CaseStudies() {
 
       <div className='text-container text-2xl mt-24 mb-4'>
         <h3 className='text-rose-600 inline-block font-bold'>
-          Getting ready for data intensiveness.
-        </h3> 
-        Enable collaboration on data and manage data transfers without impacting your solution performances.
+          Getting ready for data intensiveness.</h3> Enable your users to collaborate on data and manage data transfers without impacting your solution performances.
       </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">

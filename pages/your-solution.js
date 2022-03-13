@@ -10,7 +10,10 @@ import Contribution from '../components/Contribution'
 export default function MakeItHappen() {
   return (
     <div className="page-container">
-      <Title content="Make it happen"></Title>
+      <Title 
+        content="Envision your solution"
+        title=""
+      />
 
       <Description content="We propose a range of possible collaborations for organizations with the desire to discover Condenstion and build solutions to answer to their needs while contributing to an open-technology."></Description>
       <Anchor description="Define how to build your solution" id="#test-1"></Anchor>
