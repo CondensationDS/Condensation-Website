@@ -38,18 +38,17 @@ import NextPage from '../components/NextPage'
 export default function CaseStudies() {
   return (
     <div className="page-container">
-      <Title 
-      content="Use-cases"
-      title="Making your app ready for the era of data."
-      />
+      <Title content="Use-cases" title="Making your app ready for the era of data." />
 
-<SubTitle 
+      <SubTitle
         content="Success factors"
         title="Condensation builds collaborative products which protect people's privacy and enhance the economy of trust."
       />
 
-      <div className='text-container text-2xl mt-16 mb-4'>
-        <h3 className='text-blue-600 inline-block font-bold'>Making data ownership a reality.</h3> Build your solution with data control and certification which are pillars for getting connected with trust and without intermediaries.
+      <div className="text-container text-2xl mt-16 mb-4">
+        <h3 className="text-blue-600 inline-block font-bold">Making data ownership a reality.</h3>{' '}
+        Build your solution with data control and certification which are pillars for getting
+        connected with trust and without intermediaries.
       </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
@@ -57,24 +56,28 @@ export default function CaseStudies() {
           title="End-to-end privacy"
           subtitle="to protect secrets and personal data"
           icon={privacy}
-          color={"blue"}
+          color={'blue'}
         ></SquaredTile>
         <SquaredTile
           title="Digital truth"
           subtitle="to verify the data has not been altered"
           icon={integrity}
-          color={"blue"}
+          color={'blue'}
         ></SquaredTile>
         <SquaredTile
           title="Digital signature"
           subtitle="to trust the origin of received data"
           icon={signature}
-          color={"blue"}
+          color={'blue'}
         ></SquaredTile>
       </div>
 
-      <div className='text-container text-2xl mt-24 mb-8'>
-        <h3 className='text-purple-600 inline-block font-bold'>Breaking centralization constraints.</h3> Distribute data where you want it to be and connect multiple actors and devices in the network of your solution.
+      <div className="text-container text-2xl mt-24 mb-8">
+        <h3 className="text-purple-600 inline-block font-bold">
+          Breaking centralization constraints.
+        </h3>{' '}
+        Distribute data where you want it to be and connect multiple actors and devices in the
+        network of your solution.
       </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
@@ -82,25 +85,28 @@ export default function CaseStudies() {
           title="Connecting objects"
           subtitle="with security and low data consumption"
           icon={iot}
-          color={"purple"}
+          color={'purple'}
         ></SquaredTile>
         <SquaredTile
           title="Working offline"
           subtitle="for mobility and independence"
           icon={offline}
-          color={"purple"}
+          color={'purple'}
         ></SquaredTile>
         <SquaredTile
           title="Relocating storage"
           subtitle="for scaling while ensuring sovereignty"
           icon={distribution}
-          color={"purple"}
+          color={'purple'}
         ></SquaredTile>
       </div>
 
-      <div className='text-container text-2xl mt-24 mb-4'>
-        <h3 className='text-rose-600 inline-block font-bold'>
-          Getting ready for data intensiveness.</h3> Enable your users to collaborate on data and manage data transfers without impacting your solution performances.
+      <div className="text-container text-2xl mt-24 mb-4">
+        <h3 className="text-rose-600 inline-block font-bold">
+          Getting ready for data intensiveness.
+        </h3>{' '}
+        Enable your users to collaborate on data and manage data transfers without impacting your
+        solution performances.
       </div>
 
       <div className="flex pl-24 pt-8 gap-8 flex-wrap">
@@ -108,32 +114,33 @@ export default function CaseStudies() {
           title="Streaming"
           subtitle="with efficient upload of data in live"
           icon={streaming}
-          color={"rose"}
+          color={'rose'}
         ></SquaredTile>
         <SquaredTile
           title="Collaborating"
           subtitle="with simultaneous edition of data"
           icon={collaboration}
-          color={"rose"}
+          color={'rose'}
         ></SquaredTile>
         <SquaredTile
           title="Replicating"
           subtitle="without sharing redundancies"
           icon={replication}
-          color={"rose"}
+          color={'rose'}
         ></SquaredTile>
       </div>
 
-      <div className='text-container text-3xl mt-24 mb-32 font-bold text-black'>
-        All by design, with flexibility and scalability, to let your project evolve without limitations.
+      <div className="text-container text-3xl mt-24 mb-32 font-bold text-black">
+        All by design, with flexibility and scalability, to let your project evolve without
+        limitations.
       </div>
 
-      <SubTitle 
-      content="Products we realized"
-      title=" Together with our contributing partners, we created web, mobile and IoT applications awarded for their innovative features."
+      <SubTitle
+        content="Products we realized"
+        title=" Together with our contributing partners, we created web, mobile and IoT applications awarded for their innovative features."
       />
 
-      <div className='mt-20'></div>
+      <div className="mt-20"></div>
 
       <UseCases
         content="A smart metering system to track electric vehicles while ensuring reduced data consumption."
@@ -143,21 +150,23 @@ export default function CaseStudies() {
         altBottom="electronic component"
         imageSide={imageSideVehicle}
         altSide="moving bike"
-        awards={["Awarded by TheArk foundation,",
-               "Granted by Act for Change sustainability program,",
-               "Finalist of Start contest and BCVs creators contest."]}>
-      </UseCases> 
+        awards={[
+          'Awarded by TheArk foundation,',
+          'Granted by Act for Change sustainability program,',
+          'Finalist of Start contest and BCVs creators contest.'
+        ]}
+      ></UseCases>
 
       <UseCases
         content="An e-Voting system with data transparency to make sure our rights are respected in a digitized society."
         imageTop={votingResults}
         altTop="US map with voting results."
-        imageBottom= {votingBlockchain}
+        imageBottom={votingBlockchain}
         altBottom="Blockchain illustration."
         imageSide={votingPin}
         altSide="I voted pin."
-        awards={["Awarded by EPFL ignition grant."]}>
-      </UseCases>
+        awards={['Awarded by EPFL ignition grant.']}
+      ></UseCases>
 
       <UseCases
         content="An end-to-end encrypted messenger to protect the privacy of our digital conversations."
@@ -167,13 +176,16 @@ export default function CaseStudies() {
         altBottom="Shadow of a person."
         imageSide={imageSideMessenger}
         altSide="Person texting."
-        awards={["Awarded by EPFL XGrant program,",
-                "Awarded by the french embassy in Switerland,",
-                "Received by Swissnex in San Francisco."]}>
-      </UseCases>
+        awards={[
+          'Awarded by EPFL XGrant program,',
+          'Awarded by the french embassy in Switerland,',
+          'Received by Swissnex in San Francisco.'
+        ]}
+      ></UseCases>
 
-      <div className='text-container text-3xl mt-24 mb-32 font-bold text-black'>
-        Do you want to learn more about our past and ongoing projects? <span className='underline text-blue-500 underline-offset-8'>Contact us</span>.
+      <div className="text-container text-3xl mt-24 mb-32 font-bold text-black">
+        Do you want to learn more about our past and ongoing projects?{' '}
+        <span className="underline text-blue-500 underline-offset-8">Contact us</span>.
       </div>
 
       <div className="ml-20 mt-40 mb-12">
@@ -188,4 +200,3 @@ export default function CaseStudies() {
 CaseStudies.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>
 }
-

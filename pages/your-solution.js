@@ -10,22 +10,18 @@ import Contribution from '../components/Contribution'
 export default function MakeItHappen() {
   return (
     <div className="page-container">
-      <Title 
-        content="Envision your solution"
-        title="Distribution of data in now in your hands."
-      />
+      <Title content="Envision your solution" title="Distribution of data in now in your hands." />
 
-      <SubTitle 
+      <SubTitle
         content="Conception"
         title="We can help you to analyse how CDS can advantage your use-case and to define the requirements for building your solution."
-        />
+      />
       <p>
-
-        Are you interested in adopting data distribution? We propose to guide you in the
-        analysis of your use-case with the support of engineers and experienced developers.
+        Are you interested in adopting data distribution? We propose to guide you in the analysis of
+        your use-case with the support of engineers and experienced developers.
       </p>
 
-      <SubSubTitle content="Defining your success factors."/>
+      <SubSubTitle content="Defining your success factors." />
       <p>
         We analyze with you how managing data with a distributed technology can positively impact
         your activities and align with the strategic vision of your organization. The solutions you
@@ -41,22 +37,25 @@ export default function MakeItHappen() {
 
       <SubSubTitle content="Specifying your solution's foundations."></SubSubTitle>
       <p>
-        We conceptualize your decentralized solution by drawing an architecture diagram and structure of your data in the right schema. In addition, we can advise you on the compatible choices of hardware and/or dependencies to ensure the efficiency and security of your solution. It will give you a clear understanding of how to build your solution and to estimate its budget.
+        We conceptualize your decentralized solution by drawing an architecture diagram and
+        structure of your data in the right schema. In addition, we can advise you on the compatible
+        choices of hardware and/or dependencies to ensure the efficiency and security of your
+        solution. It will give you a clear understanding of how to build your solution and to
+        estimate its budget.
       </p>
 
-
       <SubSubTitle content="Planning the transformation of your existing solution."></SubSubTitle>
-      <p className='mb-32'>
+      <p className="mb-32">
         We identify the shortfalls of your existing solution to map which element can get the
         benefits the most from CDS enablements. Through a roadmap we propose a step-by-step approach
         to transform your product while ensuring your running operations. We define increments with
         pragmatic solutions which can be merged with your product.
       </p>
 
-
-      <SubTitle 
+      <SubTitle
         content="Development"
-        title="We can stand as technical experts to support your software developement."/>
+        title="We can stand as technical experts to support your software developement."
+      />
 
       <SubSubTitle content="Demonstrate your product feasibility"></SubSubTitle>
       <p>
@@ -68,18 +67,17 @@ export default function MakeItHappen() {
       </p>
 
       <SubSubTitle content="Develop and maintain your product"></SubSubTitle>
-      <p className='mb-32'>
+      <p className="mb-32">
         We can build an agile project with you to dynamically adapt to your priorities and the
         opportunities you want to take advantage of. For most complex projects we combine CDS
         expertizes with development companies’s workforce in order to make your product grow in the
         long term. We are partnered with best in class development companies in Switzerland.
       </p>
 
-
-      <SubTitle 
+      <SubTitle
         content="Initiation"
         title="You believe in the project, but your organization is not there yet? We can work together to raise awareness."
-        />
+      />
       <p>
         We think that meeting people is the best way to enhance innovation and create a community
         around a growing technology. Thus, we propose to animate a keynote introductory event to
@@ -114,8 +112,9 @@ export default function MakeItHappen() {
         approach to build distibuted solutions.
       </p>
 
-      <div className='text-container text-3xl mt-24 mb-32 font-bold text-black'>
-        Do you have a project in mind? <span className='underline text-blue-500 underline-offset-8'>Contact us</span>.
+      <div className="text-container text-3xl mt-24 mb-32 font-bold text-black">
+        Do you have a project in mind?{' '}
+        <span className="underline text-blue-500 underline-offset-8">Contact us</span>.
       </div>
 
       <Contribution></Contribution>
