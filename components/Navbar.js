@@ -5,7 +5,7 @@ import Logo from '../assets/img/logos/logo-condensation-data-system.svg'
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-white border-b border-gray-200 py-3">
+      <nav className="border-b border-gray-200 py-3">
         <div className="flex flex-nowrap items-center">
           <Link href="/">
             <a href="/" className="flex w-96 px-6">

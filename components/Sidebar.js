@@ -22,14 +22,14 @@ export default function Sidebar() {
             }`}
           >
             <Link href="/case-studies">
-              <a>Case studies</a>
+              <a>Discover use cases</a>
             </Link>
           </li>
           <li
             className={`list-none py-0.5 px-6 ${router.pathname == '/get-started' ? 'active' : ''}`}
           >
             <Link href="/get-started">
-              <a>Develop with CDS</a>
+              <a>Explore the technology</a>
             </Link>
           </li>
           <li className={`list-none py-0.5 px-6 ${router.pathname == '/about-us' ? 'active' : ''}`}>
@@ -43,7 +43,7 @@ export default function Sidebar() {
             }`}
           >
             <Link href="/your-solution">
-              <a>Make it happen</a>
+              <a>Envision your solution</a>
             </Link>
           </li>
         </ul>

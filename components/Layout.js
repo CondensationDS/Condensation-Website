@@ -13,7 +13,7 @@ export default function Layout({ children }) {
 
       <div className="flex page-structure">
         <Sidebar />
-        <main className="w-full scroll-smooth overflow-scroll bg-gray-100">
+        <main className="w-full scroll-smooth overflow-scroll">
           {children}
           <Footer></Footer>
         </main>

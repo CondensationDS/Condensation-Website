@@ -15,7 +15,9 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
-      '7xl': '5rem'
+      '7xl': '5rem',
+      '8xl': '6rem',
+      '9xl': '7rem'
     },
     colors: {
       transparent: 'transparent',
@@ -23,13 +25,19 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
-      emerald: colors.emerald,
       blue: colors.blue,
+      emerald: colors.emerald,
+      green: colors.green,
+      sky: colors.sky,
       cyan: colors.cyan,
       red: colors.red,
+      rose: colors.rose,
       indigo: colors.indigo,
       yellow: colors.yellow,
-      slate: colors.slate
+      purple: colors.purple,
+      amber: colors.amber,
+      orange: colors.orange,
+      stone: colors.stone
     },
     extend: {
       spacing: {
