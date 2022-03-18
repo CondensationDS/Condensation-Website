@@ -11,7 +11,7 @@ import Card from '../components/Card'
 
 export default function DevelopWithCDS() {
   return (
-    <div className="page-container">
+    <div className="page-container max-w-screen-2xl">
       <Title content="Technical deep-dive" title="Discover the technological backbone." />
 
       <SubTitle
@@ -19,7 +19,7 @@ export default function DevelopWithCDS() {
         title="Condensation combine mathematical models to achieve data distribution, conflict-free merge, and end-to-end encryption."
       />
 
-      <div className="text-container mt-20 mb-32 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+      <div className="text-container p-5 sm:px-20 mt-10 mb-10 sm:mt-20 sm:mb-32 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
         <ul>
           <li>SHA-256 hash encryption</li>
           <li>AES-256 symmetrical encryption</li>
@@ -35,29 +35,27 @@ export default function DevelopWithCDS() {
         title="To better understand the implementation, you can review the specifications and the source code in early access."
       />
 
-      <p className="text-xl mt-8">
+      <div className="p-5 sm:px-20 text-xl mt-8">
         The actual stable version of CDS is the fruit of one mind and reached maturity after a long
         research period. Many samples of code, notes and documentation were created and we
         transparently work on simplifying and completing the different ressources.
-      </p>
+      </div>
 
       <SubSubTitle content="Read the low level implementation specifications."></SubSubTitle>
-      <p>
+      <div className="p-5 sm:px-20 text-lg">
         The specifications can be found on <a className="text-blue-500">docs.condensation.io</a>.
         Low level description is well described and we welcome feedback to complete the
         documentation.
-      </p>
+      </div>
 
       <SubSubTitle content="Review implementations of mature and in progress versions."></SubSubTitle>
-      <p>
+      <div className="p-5 sm:px-20 text-lg">
         We currently have a number of native implementations, both from Thomas and from the
         community - we believe supporting multiple platforms will be a key success driver.
-      </p>
+      </div>
 
-      <div className="pt-8 pl-24 flex gap-8 flex-wrap max-w-5xl">
+      <div className="pt-8 pl-10 sm:px-20 flex gap-8 flex-wrap max-w-5xl">
         <Card title="Java Library" status="Mature - being packaged" />
-
-        <Card title="Swift Library" status="Started - on hold" />
 
         <Card title="Javascript Library" status="Low level implementation mature" />
 
@@ -71,12 +69,12 @@ export default function DevelopWithCDS() {
       </div>
 
       <SubSubTitle content="Research and forseen developments."></SubSubTitle>
-      <p>
+      <div className="p-5 sm:px-20 text-lg">
         Moreover, we are currently preparing the innovations to maintain our source code and propose
         specific implementations.
-      </p>
+      </div>
 
-      <div className="pt-8 pl-24 flex gap-8 flex-wrap max-w-5xl">
+      <div className="pt-8 pl-10 sm:px-20 flex gap-8 flex-wrap max-w-5xl">
         <Card title="Automatic portability" status="In progress" />
 
         <Card title="Wasm version" status="In progress" />
@@ -86,12 +84,12 @@ export default function DevelopWithCDS() {
         <Card title="No ownership storage" status="Analysis" />
       </div>
 
-      <div className="text-container text-3xl mt-24 mb-32 font-bold text-black">
-        Do you want to get involved and contribute to core developments?{' '}
-        <span className="underline text-blue-500 underline-offset-8">Get in touch</span>.
+      <div className="text-container px-10 sm:px-20 text-2xl sm:text-3xl mt-10 sm:mt-24 font-bold text-black">
+        <span>Do you want to get involved and contribute to core developments?</span>
+        <span className="underline text-blue-500 underline-offset-8 ml-3">Get in touch</span>.
       </div>
 
-      <div className="ml-20 mt-40 mb-12">
+      <div className="mx-5 mt-10 sm:ml-20 sm:mt-20 mb-12">
         <NextPage descripton={'Meet our team'} link={'/about-us'}></NextPage>
       </div>
 

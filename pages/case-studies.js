@@ -37,21 +37,20 @@ import NextPage from '../components/NextPage'
 
 export default function CaseStudies() {
   return (
-    <div className="page-container">
+    <div className="page-container max-w-screen-2xl">
       <Title content="Use-cases" title="Making your app ready for the era of data." />
-
       <SubTitle
         content="Success factors"
         title="Condensation builds collaborative products which protect people's privacy and enhance the economy of trust."
       />
-
-      <div className="text-container text-2xl mt-16 mb-4">
-        <h3 className="text-blue-600 inline-block font-bold">Making data ownership a reality.</h3>{' '}
-        Build your solution with data control and certification which are pillars for getting
-        connected with trust and without intermediaries.
+      <div className="text-container pl-5 sm:pl-20 text-2xl mt-16 mb-4">
+        <h3 className="text-blue-600 inline-block font-bold">Making data ownership a reality.</h3>
+        <div className="text-xl">
+          Build your solution with data control and certification which are pillars for getting
+          connected with trust and without intermediaries.
+        </div>
       </div>
-
-      <div className="flex pl-24 pt-8 gap-8 flex-wrap">
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-20 pt-5 gap-8">
         <SquaredTile
           title="End-to-end privacy"
           subtitle="to protect secrets and personal data"
@@ -72,15 +71,17 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className="text-container text-2xl mt-24 mb-8">
+      <div className="text-container pl-5 sm:pl-20 text-2xl mt-24 mb-8">
         <h3 className="text-purple-600 inline-block font-bold">
           Breaking centralization constraints.
-        </h3>{' '}
-        Distribute data where you want it to be and connect multiple actors and devices in the
-        network of your solution.
+        </h3>
+        <div className="text-xl">
+          Distribute data where you want it to be and connect multiple actors and devices in the
+          network of your solution.
+        </div>
       </div>
 
-      <div className="flex pl-24 pt-8 gap-8 flex-wrap">
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:px-20 pt-5 gap-8">
         <SquaredTile
           title="Connecting objects"
           subtitle="with security and low data consumption"
@@ -101,15 +102,17 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className="text-container text-2xl mt-24 mb-4">
+      <div className="text-container pl-5 sm:pl-20 text-2xl mt-24 mb-4">
         <h3 className="text-rose-600 inline-block font-bold">
           Getting ready for data intensiveness.
-        </h3>{' '}
-        Enable your users to collaborate on data and manage data transfers without impacting your
-        solution performances.
+        </h3>
+        <div className="text-xl">
+          Enable your users to collaborate on data and manage data transfers without impacting your
+          solution performances.
+        </div>
       </div>
 
-      <div className="flex pl-24 pt-8 gap-8 flex-wrap">
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-20 pt-5 gap-8">
         <SquaredTile
           title="Streaming"
           subtitle="with efficient upload of data in live"
@@ -130,7 +133,7 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className="text-container text-3xl mt-24 mb-32 font-bold text-black">
+      <div className="text-container pl-5 sm:pl-20 text-3xl mt-24 mb-32 font-bold text-black">
         All by design, with flexibility and scalability, to let your project evolve without
         limitations.
       </div>
@@ -183,12 +186,12 @@ export default function CaseStudies() {
         ]}
       ></UseCases>
 
-      <div className="text-container text-3xl mt-24 mb-32 font-bold text-black">
+      <div className="text-container pl-5 sm:pl-20 text-3xl mt-5 sm:mt-24 mb-10 font-bold text-black">
         Do you want to learn more about our past and ongoing projects?{' '}
         <span className="underline text-blue-500 underline-offset-8">Contact us</span>.
       </div>
 
-      <div className="ml-20 mt-40 mb-12">
+      <div className="ml-5 mt-5 sm:ml-20 sm:mt-20 mb-12">
         <NextPage descripton={'Develop with CDS'} link={'/get-started'}></NextPage>
       </div>
 

@@ -20,7 +20,7 @@ body {
 }
 
 .front-page-main > div:first-child {
-  width: 600px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -32,6 +32,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.sidebar {
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
 }
 
 .sidebar li {
@@ -102,8 +107,6 @@ a {
 
 .text-container {
   max-width: 800px;
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 .page-container p {

@@ -4,14 +4,14 @@ export default function SquaredTile({ title, subtitle, icon, color }) {
   return (
     <div
       className={
-        'w-64 h-64 p-8 flex flex-col shrink-0 content-center justify-center text-black font-bold text-xl leading-snug rounded-xl ' +
+        'w-64 h-64 p-8 flex-col shrink-0 text-center justify-center text-black font-bold text-xl leading-snug rounded-xl ' +
         (color === 'blue' ? 'bg-blue-50' : '') +
         (color === 'purple' ? 'bg-purple-50' : '') +
         (color === 'rose' ? 'bg-rose-50' : '')
       }
     >
-      <div className="h-14 w-14">
-        <Image width="100%" height="100%" objectFit="contain" src={icon} alt={title}></Image>
+      <div className="w-full">
+        <Image objectFit="contain" src={icon} alt={title} width={60} height={60}></Image>
       </div>
       <div
         className={
