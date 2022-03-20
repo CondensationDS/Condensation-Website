@@ -15,12 +15,14 @@ body {
 }
 
 .front-page-main {
+  /*
   background: linear-gradient(60deg, #2b5cd9 0%, #5fa9ec 100%);
   height: calc(100vh - 54.5px - 64px);
+  */
 }
 
 .front-page-main > div:first-child {
-  max-width: 600px;
+  /* width: 800px;*/
   display: flex;
   flex-direction: column;
 }

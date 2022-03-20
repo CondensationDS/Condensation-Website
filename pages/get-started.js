@@ -19,7 +19,7 @@ export default function DevelopWithCDS() {
         title="Condensation combine mathematical models to achieve data distribution, conflict-free merge, and end-to-end encryption."
       />
 
-      <div className="text-container p-5 sm:px-20 mt-10 mb-10 sm:mt-20 sm:mb-32 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+      <div className="text-container p-5 sm:px-20 mt-10 mb-10 sm:mt-20 sm:mb-32 text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
         <ul>
           <li>SHA-256 hash encryption</li>
           <li>AES-256 symmetrical encryption</li>
