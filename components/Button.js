@@ -2,7 +2,7 @@ export default function Button({ content }) {
   return (
     <button
       type="button"
-      className="inline-flex items-center px-6 py-2 text-sm font-medium text-center rounded-full bg-white"
+      className="inline-flex items-center py-2 text-center text-blue-500 text-xl border-b"
     >
       {content}
       <svg

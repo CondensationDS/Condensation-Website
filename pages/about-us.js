@@ -20,7 +20,7 @@ export default function MeetOurTeam() {
 
       <SubTitle
         content="What drives us"
-        title="We work on protecting people's digital rights while building a more robust and sustainable digital world."
+        title="We work on protecting people's digital rights while building a more collaborative and sustainable digital world."
       />
 
       <p className="mb-28">

@@ -77,7 +77,7 @@ export default function Discover() {
 
       <SubTitle
         content="Guiding principles"
-        title="Condensation put backs the control of data in the hands of its owner while giving the flexibility to build a market ready solution."
+        title="Condensation puts back the control of data in the hands of its owner while giving the flexibility to build a market ready solution."
       />
 
       <div className="flex flex-nowrap px-24 pt-8 pb-20 gap-20">
