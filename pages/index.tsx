@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
 import SubTitle from '../components/SubTitle'
@@ -17,13 +18,13 @@ import certification from '../assets/img/cds-certification-thumbnail.png'
 import distribution from '../assets/img/cds-distribution-thumbnail.png'
 import merge from '../assets/img/cds-merge-thumbnail.png'
 
-
-
-
 import defaults from '../common/defaults.js'
 
 export default function Home() {
+  function goToDiscover() {}
+
   return (
+
     <div className="front-page-main flex flex-col">
       <div className='px-24 my-24'>
         <h1 className="max-w-screen-md text-5xl text-black leading-snug">

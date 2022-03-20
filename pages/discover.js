@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
-import SubSubTitle from '../components/SubSubTitle'
 import NextPage from '../components/NextPage'
 import Contribution from '../components/Contribution'
 
@@ -17,20 +16,19 @@ import devs from '../assets/img/illustration-developers.png'
 
 export default function Discover() {
   return (
-    <div className="page-container">
+    <div className="page-container max-w-screen-2xl">
       <Title content="What is Condensation?" title="A system made for data trust and ownership." />
-
       <SubTitle
         content="Overview"
         title="CDS is an industry oriented technology to adopt data distribution and cybersecurity without doubts on being the first mover."
       />
 
-      <div className="flex flex-wrap px-24 pt-16 pb-24 gap-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-5 pt-10 sm:px-20 sm:pt-16 sm:pb-10 gap-10 max-w-screen-xl">
         <div className="max-w-md basis-120">
-          <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+          <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
             A lightweight and open-source code base.
           </h3>
-          <div className="pt-4">
+          <div className="pt-4 text-base">
             You can use Condensation for commercial purpose for free, it is organised in lightweight
             modules which can be audited by a single person. Moreover, it can be customized with new
             implementations for specific purposes such as preferred encryption methods or
@@ -80,18 +78,20 @@ export default function Discover() {
         title="Condensation puts back the control of data in the hands of its owner while giving the flexibility to build a market ready solution."
       />
 
-      <div className="flex flex-nowrap px-24 pt-8 pb-20 gap-20">
-        <div className="flex-1 rounded-lg py-12">
-          <div className="h-20 w-24 mb-6 flex align-center">
+      <div className="grid grid-row-1 lg:grid-cols-3 px-5 sm:px-20 pt-10 pb-10 gap-10 max-w-screen-xl">
+        <div className="rounded-lg py-5">
+          <div className="w-full text-center mb-3">
             <Image
-              width="100%"
-              height="100%"
+              width={90}
+              height={120}
               objectFit="contain"
               src={devices}
               alt="Connected devices"
             ></Image>
           </div>
-          <h3 className="text-2xl font-bold text-black">Managing the data where it is created.</h3>
+          <h3 className="text-xl sm:text-2xl font-bold text-black">
+            Managing the data where it is created.
+          </h3>
           <div className="pt-4">
             CDS avoids moving data to centralized infrastructures by computing it directly where it
             is created, reducing this way the data transmission efforts. CDS can select the piece of
@@ -99,18 +99,17 @@ export default function Discover() {
             produce analyses or commercial services.
           </div>
         </div>
-
-        <div className="flex-1 rounded-lg py-12">
-          <div className="h-20 w-24 mb-6 flex align-center">
+        <div className="rounded-lg py-5">
+          <div className="w-full text-center mb-3">
             <Image
-              width="100%"
-              height="100%"
+              width={90}
+              height={120}
               objectFit="contain"
               src={message}
               alt="Secured message"
             ></Image>
           </div>
-          <h3 className="text-2xl font-bold text-black">
+          <h3 className="text-xl sm:text-2xl font-bold text-black">
             Protecting the data itself from end-to-end.
           </h3>
           <div className="pt-4">
@@ -121,19 +120,17 @@ export default function Discover() {
             recipient.
           </div>
         </div>
-
-        <div className="flex-1 rounded-lg py-12">
-          <div className="h-20 w-20 mb-6 flex align-center">
+        <div className="rounded-lg py-5">
+          <div className="w-full text-center mb-3">
             <Image
-              width="100%"
-              height="100%"
+              width={90}
+              height={120}
               objectFit="contain"
               src={store}
               alt="Secured database"
             ></Image>
           </div>
-
-          <h3 className="text-2xl font-bold text-black">
+          <h3 className="text-xl sm:text-2xl font-bold text-black">
             Storing data anywhere without constraints.
           </h3>
           <div className="pt-4">
@@ -149,8 +146,8 @@ export default function Discover() {
         title="CDS creates a collaborative network connecting people, companies and objects without trusting intermediaries."
       />
 
-      <div className="flex mt-20 ml-24">
-        <div className="w-60 h-60">
+      <div className="grid grid-rows-1 sm:flex mt-20 sm:ml-20">
+        <div className="hidden sm:block w-20 h-20 sm:w-60 sm:h-60">
           <Image
             width="240px"
             height="240px"
@@ -159,7 +156,7 @@ export default function Discover() {
             alt="End user of applications"
           ></Image>
         </div>
-        <div className="ml-12">
+        <div className="ml-5 mx-5 sm:mx-20">
           <h3 className="text-2xl font-bold text-black mb-4">
             People and companies using applications
           </h3>
@@ -178,8 +175,8 @@ export default function Discover() {
         </div>
       </div>
 
-      <div className="flex mt-20 ml-24">
-        <div className="w-60 h-60">
+      <div className="grid grid-rows-1 sm:flex mt-20 mx-5 sm:mx-20">
+        <div className="hidden sm:block w-20 h-20 sm:w-60 sm:h-60">
           <Image
             width="240px"
             height="240px"
@@ -188,7 +185,7 @@ export default function Discover() {
             alt="System administator"
           ></Image>
         </div>
-        <div className="ml-12">
+        <div className="ml-5 sm:ml-12">
           <h3 className="text-2xl font-bold text-black mb-4">
             System administrators mainting IT infrastructures
           </h3>
@@ -207,8 +204,8 @@ export default function Discover() {
         </div>
       </div>
 
-      <div className="flex mt-20 ml-24">
-        <div className="w-60 h-60">
+      <div className="grid grid-rows-1 sm:flex mt-20 mx-5 sm:mx-20">
+        <div className="hidden sm:block w-20 h-20 sm:w-60 sm:h-60">
           <Image
             width="240px"
             height="240px"
@@ -217,7 +214,7 @@ export default function Discover() {
             alt="Distributed application developers"
           ></Image>
         </div>
-        <div className="ml-12">
+        <div className="ml-5 sm:ml-12">
           <h3 className="text-2xl font-bold text-black mb-4">Developers building applications.</h3>
           <div className="max-w-xl">
             CDS simplifies the development of distributed applications. It provides an interface in
@@ -240,7 +237,7 @@ export default function Discover() {
         </div>
       </div>
 
-      <div className="ml-20 mt-40 mb-12">
+      <div className="ml-0 mt-10 sm:ml-20 sm:mt-40 mb-12">
         <NextPage descripton={'Case studies'} link={'/case-studies'}></NextPage>
       </div>
 

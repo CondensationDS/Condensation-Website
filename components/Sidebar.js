@@ -1,19 +1,26 @@
+import React, { useContext } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import defaults from '../common/defaults'
 import externalLinkIcon from '../assets/img/external-link.svg'
+import { CDSContext } from '../common/context/CDSContext'
 
 export default function Sidebar() {
   const router = useRouter()
+  const { showSidebar, openSidebar } = useContext(CDSContext)
 
   return (
-    <div className="py-6">
+    <div
+      className={`sidebar fixed h-full py-6 lg:relative lg:translate-x-0 z-40 ease-in-out duration-200 ${
+        showSidebar ? 'translate-x-0' : '-translate-x-full md:bg-white'
+      }`}
+    >
       <div className="sidebar w-64">
         <ul>
           <li className={`list-none py-0.5 px-6 ${router.pathname == '/discover' ? 'active' : ''}`}>
             <Link href="/discover">
-              <a>What is Condensation?</a>
+              <a onClick={openSidebar}>What is Condensation?</a>
             </Link>
           </li>
           <li
@@ -22,19 +29,19 @@ export default function Sidebar() {
             }`}
           >
             <Link href="/case-studies">
-              <a>Discover use cases</a>
+              <a onClick={openSidebar}>Discover use cases</a>
             </Link>
           </li>
           <li
             className={`list-none py-0.5 px-6 ${router.pathname == '/get-started' ? 'active' : ''}`}
           >
             <Link href="/get-started">
-              <a>Explore the technology</a>
+              <a onClick={openSidebar}>Explore the technology</a>
             </Link>
           </li>
           <li className={`list-none py-0.5 px-6 ${router.pathname == '/about-us' ? 'active' : ''}`}>
             <Link href="/about-us">
-              <a>Meet the team</a>
+              <a onClick={openSidebar}>Meet the team</a>
             </Link>
           </li>
           <li
@@ -43,7 +50,7 @@ export default function Sidebar() {
             }`}
           >
             <Link href="/your-solution">
-              <a>Envision your solution</a>
+              <a onClick={openSidebar}>Envision your solution</a>
             </Link>
           </li>
         </ul>
