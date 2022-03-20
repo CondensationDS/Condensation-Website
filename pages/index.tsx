@@ -1,22 +1,28 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
 import epfl from '../assets/img/logos/logo-sponsor-epfl.svg'
 import trust from '../assets/img/logos/logo-sponsor-trust-valley.svg'
 import vaud from '../assets/img/logos/logo-sponsor-spei.svg'
-import illustration from '../assets/img/cds-illustration.png'
 import defaults from '../common/defaults.js'
 
 export default function Home() {
+  function goToDiscover() {}
+
   return (
-    <div className="front-page-main pl-24 flex flex-col">
+    <div className="front-page-main px-5 sm:px-24 flex flex-col">
       <div>
         <h1 className="text-3xl text-white pt-32 leading-snug">
           Condensation is an <strong>open-source</strong> project disrupting how we create
           applications to match the challenges of the era of data.
         </h1>
         <div className="flex mt-12">
-          <Button content="Discover Condensation" />
+          <Link href="/discover">
+            <a>
+              <Button content="Discover Condensation" />
+            </a>
+          </Link>
           <div className="w-6"></div>
           <Button content="Get in touch" />
         </div>
