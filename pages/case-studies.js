@@ -1,10 +1,6 @@
 import Layout from '../components/Layout'
-
-import Description from '../components/Description'
-import Anchor from '../components/Anchor'
 import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
-import SubSubTitle from '../components/SubSubTitle'
 import SquaredTile from '../components/SquaredTile'
 import Contribution from '../components/Contribution'
 import UseCases from '../components/UseCases'
@@ -34,6 +30,7 @@ import imageBottomVehicle from '../assets/img/use-case-vehicle-microchip.png'
 import imageSideVehicle from '../assets/img/use-case-vehicle-bike.png'
 
 import NextPage from '../components/NextPage'
+import defaults from '../common/defaults'
 
 export default function CaseStudies() {
   return (
@@ -188,7 +185,13 @@ export default function CaseStudies() {
 
       <div className="text-container pl-5 sm:pl-20 text-3xl mt-5 sm:mt-24 mb-10 font-bold text-black">
         Do you want to learn more about our past and ongoing projects?{' '}
-        <span className="underline text-blue-500 underline-offset-8">Contact us</span>.
+        <a
+          className="mail underline text-blue-500 underline-offset-8 ml-3"
+          href={`mailto:${defaults.email}`}
+        >
+          Contact us
+        </a>
+        .
       </div>
 
       <div className="ml-5 mt-5 sm:ml-20 sm:mt-20 mb-12">

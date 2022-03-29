@@ -12,6 +12,8 @@ import lou from '../assets/img/profile-picture-lou-locci.png'
 import souksou from '../assets/img/profile-picture-thomas-souksouvan.png'
 import People from '../components/People'
 
+import defaults from '../common/defaults'
+
 export default function MeetOurTeam() {
   return (
     <div className="page-container max-w-screen-2xl">
@@ -78,7 +80,7 @@ export default function MeetOurTeam() {
       </div>
       <div class="bg-gray-200 h-px my-6"></div>
       <SubSubTitle content="Our advisors supporting the project strategy."></SubSubTitle>
-      <p>
+      <div className="px-5 sm:px-20">
         We are supported by research mentors and business coaches from the Swiss startup ecosystem :
         <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
           <li>
@@ -92,10 +94,10 @@ export default function MeetOurTeam() {
             program named Trust Valley for supporting the development of partnerships.
           </li>
         </ul>
-      </p>
+      </div>
 
       <SubSubTitle content="Special thanks to notable contributions."></SubSubTitle>
-      <p>
+      <div className="px-5 sm:px-20">
         Multiple individuals already committed to help with the initiation of this project, we would
         like to highlight special thanks for the following people :
         <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
@@ -119,11 +121,19 @@ export default function MeetOurTeam() {
             contribution platform.
           </li>
         </ul>
-      </p>
+      </div>
 
       <div className="text-container pl-5 sm:px-20 text-3xl mt-10 mb-20 font-bold text-black">
         <span>Do you want to be part of the data distribution journey?</span>
-        <span className="underline text-blue-500 underline-offset-8 ml-2">Join our Discord</span>.
+        <span className="underline text-blue-500 underline-offset-8 ml-2"></span>
+        <a
+          className="mail underline text-blue-500 underline-offset-8 ml-3"
+          href={defaults.url.discord}
+          target="_blank"
+        >
+          Join our Discord
+        </a>
+        .
       </div>
 
       <div className="ml-5 sm:ml-20 mb-12">

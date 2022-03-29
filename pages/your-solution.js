@@ -3,6 +3,7 @@ import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import Contribution from '../components/Contribution'
+import defaults from '../common/defaults'
 
 export default function MakeItHappen() {
   return (
@@ -110,7 +111,13 @@ export default function MakeItHappen() {
       </div>
       <div className="text-container px-10 sm:px-20 text-2xl sm:text-3xl my-10 sm:mt-20 font-bold text-black">
         <span>Do you have a project in mind?</span>
-        <span className="underline text-blue-500 underline-offset-8 ml-3">Contact us</span>.
+        <a
+          className="mail underline text-blue-500 underline-offset-8 ml-3"
+          href={`mailto:${defaults.email}`}
+        >
+          Contact us
+        </a>
+        .
       </div>
       <Contribution></Contribution>
     </div>

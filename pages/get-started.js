@@ -1,13 +1,11 @@
 import Layout from '../components/Layout'
-
-import Description from '../components/Description'
-import Anchor from '../components/Anchor'
 import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import NextPage from '../components/NextPage'
 import Contribution from '../components/Contribution'
 import Card from '../components/Card'
+import defaults from '../common/defaults'
 
 export default function DevelopWithCDS() {
   return (
@@ -19,7 +17,7 @@ export default function DevelopWithCDS() {
         title="Condensation combine mathematical models to achieve data distribution, conflict-free merge, and end-to-end encryption."
       />
 
-      <div className="text-container p-5 sm:px-20 mt-10 mb-10 sm:mt-20 sm:mb-32 text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+      <div className="text-container p-5 sm:px-20 mt-10 mb-10 sm:mt-20 sm:mb-32 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
         <ul>
           <li>SHA-256 hash encryption</li>
           <li>AES-256 symmetrical encryption</li>
@@ -86,7 +84,13 @@ export default function DevelopWithCDS() {
 
       <div className="text-container px-10 sm:px-20 text-2xl sm:text-3xl mt-10 sm:mt-24 font-bold text-black">
         <span>Do you want to get involved and contribute to core developments?</span>
-        <span className="underline text-blue-500 underline-offset-8 ml-3">Get in touch</span>.
+        <a
+          className="mail underline text-blue-500 underline-offset-8 ml-3"
+          href={`mailto:${defaults.email}`}
+        >
+          Get in touch
+        </a>
+        .
       </div>
 
       <div className="mx-5 mt-10 sm:ml-20 sm:mt-20 mb-12">
