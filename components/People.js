@@ -21,7 +21,7 @@ export default function People({ picture, name, contribution, role, description 
           {contribution},<br />
           {role}.
         </h4>
-        <div>{description}</div>
+        <div className='max-w-md'>{description}</div>
       </div>
     </div>
   )
