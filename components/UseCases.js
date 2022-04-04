@@ -13,7 +13,9 @@ export default function UseCases({
   return (
     <div className="max-w-5xl flex items-center flex-col xl:flex-row mx-3 sm:mx-28 sm:mr-14 py-16 gap-6">
       <div className={'max-w-md flex flex-col content-start my-6 xl:my-auto'}>
-        <h3 className={'text-stone-900 font-bold leading-snug text-2xl sm:text-3xl pr-6'}>{content}</h3>
+        <h3 className={'text-stone-900 font-bold leading-snug text-2xl sm:text-3xl pr-6'}>
+          {content}
+        </h3>
         <div className="mt-4 whitespace-pre-wrap">{awards.join('\n')}</div>
       </div>
 

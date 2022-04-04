@@ -9,7 +9,6 @@ export default function Button({ content, link }) {
       href={link}
     >
       {content}
-
     </a>
   )
 }

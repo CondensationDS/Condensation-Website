@@ -215,20 +215,18 @@ export default function Discover() {
           ></Image>
         </div>
         <div className="sm:ml-20">
-          <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">Developers building applications.</h3>
+          <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
+            Developers building applications.
+          </h3>
           <div className="max-w-xl">
             CDS simplifies the development of distributed applications. It provides an interface in
             the form of a document which is known as a flexible data structuring tool. The core
             algorithm automatically manage the encrytion and efficient synchronisation of data and
             give to the developer the following benefits :
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
-              <li>
-                Build encrypted apps without cryptography knowledge.
-              </li>
+              <li>Build encrypted apps without cryptography knowledge.</li>
               <li>Create apps where the data can be certified and verified.</li>
-              <li>
-                Evoluate from centralizated to distributed architecture.
-              </li>
+              <li>Evoluate from centralizated to distributed architecture.</li>
               <li>Connect multiple devices or services using a single protocol.</li>
             </ul>
             Its a one stop solution to manage data securely from the creation to the storage.
@@ -240,9 +238,7 @@ export default function Discover() {
         <NextPage descripton={'Discover use cases'} link={'/use-cases'}></NextPage>
       </div>
 
-      <Contribution
-        link="https://github.com/CondensationDS/Condensation-Website/blob/main/pages/discover.js"
-      />    
+      <Contribution link="https://github.com/CondensationDS/Condensation-Website/blob/main/pages/discover.js" />
     </div>
   )
 }

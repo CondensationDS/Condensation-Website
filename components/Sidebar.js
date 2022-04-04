@@ -24,9 +24,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li
-            className={`list-none py-0.5 px-6 ${
-              router.pathname == '/use-cases' ? 'active' : ''
-            }`}
+            className={`list-none py-0.5 px-6 ${router.pathname == '/use-cases' ? 'active' : ''}`}
           >
             <Link href="/use-cases">
               <a onClick={openSidebar}>Discover use cases</a>

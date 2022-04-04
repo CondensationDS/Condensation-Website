@@ -79,34 +79,37 @@ export default function MeetOurTeam() {
         />
       </div>
 
-
       <SubSubTitle content="Our early community."></SubSubTitle>
 
       <div className="text-container p-8 sm:px-28 text-lg">
-        Condensation is an open project, and started to receive contributions in 2022. We welcome the support from individuals, companies and mentors from the startup ecosystem.
+        Condensation is an open project, and started to receive contributions in 2022. We welcome
+        the support from individuals, companies and mentors from the startup ecosystem.
       </div>
 
-      <div className='flex flex-wrap p-8 sm:px-28 gap-8'>
-
-        <div className='flex-col p-8 border border-gray-200 basis-60 shrink-0'>
+      <div className="flex flex-wrap p-8 sm:px-28 gap-8">
+        <div className="flex-col p-8 border border-gray-200 basis-60 shrink-0">
           <div>GitHub stars</div>
-          <div className='text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>418</div> 
+          <div className="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+            418
+          </div>
         </div>
 
-        <div className='flex-col p-8 border border-gray-200 basis-60 shrink-0'>
+        <div className="flex-col p-8 border border-gray-200 basis-60 shrink-0">
           <div>Commited lines of code</div>
-          <div className='text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>80k</div>
+          <div className="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+            80k
+          </div>
         </div>
 
-        <div className='flex-col p-8 border border-gray-200 basis-60 shrink-0'>
+        <div className="flex-col p-8 border border-gray-200 basis-60 shrink-0">
           <div>Contributing companies</div>
-          <div className='text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500'>3</div>
+          <div className="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+            3
+          </div>
         </div>
-
       </div>
 
-      <div className='h-px bg-gray-200 my-8 sm:my-28'></div>
-
+      <div className="h-px bg-gray-200 my-8 sm:my-28"></div>
 
       <div className="text-container pl-8 sm:px-28 text-2xl sm:text-3xl mt-12 mb-12 font-bold text-black">
         <span>Do you want to be part of the data distribution journey?</span>
@@ -116,7 +119,7 @@ export default function MeetOurTeam() {
           href={defaults.url.discord}
           target="_blank"
         >
-        Join our Discord
+          Join our Discord
         </a>
       </div>
 
@@ -124,9 +127,7 @@ export default function MeetOurTeam() {
         <NextPage descripton={'Adopt Condensation'} link={'/adopt-condensation'}></NextPage>
       </div>
 
-      <Contribution
-        link="https://github.com/CondensationDS/Condensation-Website/blob/main/pages/about-us.js"
-      />
+      <Contribution link="https://github.com/CondensationDS/Condensation-Website/blob/main/pages/about-us.js" />
     </div>
   )
 }
