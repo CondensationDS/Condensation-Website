@@ -23,7 +23,7 @@ export default function Discover() {
         title="CDS is an industry oriented technology to adopt data distribution and cybersecurity without doubts on being the first mover."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-5 pt-10 sm:px-20 sm:pt-16 sm:pb-10 gap-10 max-w-screen-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-8 pt-10 sm:px-28 sm:pt-16 sm:pb-10 gap-10 max-w-screen-xl">
         <div className="max-w-md basis-120">
           <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
             A lightweight and open-source code base.
@@ -37,7 +37,7 @@ export default function Discover() {
         </div>
 
         <div className="max-w-md basis-120">
-          <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+          <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
             Generic to build tailored solutions.
           </h3>
           <div className="pt-4">
@@ -49,7 +49,7 @@ export default function Discover() {
         </div>
 
         <div className="max-w-md basis-120">
-          <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+          <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
             Secured with market proven algorithms.
           </h3>
           <div className="pt-4">
@@ -61,7 +61,7 @@ export default function Discover() {
         </div>
 
         <div className="max-w-md basis-120">
-          <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
+          <h3 className="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500">
             Compliant with regulations.
           </h3>
           <div className="pt-4">
@@ -78,9 +78,9 @@ export default function Discover() {
         title="Condensation puts back the control of data in the hands of its owner while giving the flexibility to build a market ready solution."
       />
 
-      <div className="grid grid-row-1 lg:grid-cols-3 px-5 sm:px-20 pt-10 pb-10 gap-10 max-w-screen-xl">
+      <div className="grid grid-row-1 lg:grid-cols-3 px-8 sm:px-28 pt-10 pb-10 gap-16 max-w-screen-xl">
         <div className="rounded-lg py-5">
-          <div className="w-full text-center mb-3">
+          <div className="w-full mb-3">
             <Image
               width={90}
               height={120}
@@ -100,7 +100,7 @@ export default function Discover() {
           </div>
         </div>
         <div className="rounded-lg py-5">
-          <div className="w-full text-center mb-3">
+          <div className="w-full mb-3">
             <Image
               width={90}
               height={120}
@@ -121,7 +121,7 @@ export default function Discover() {
           </div>
         </div>
         <div className="rounded-lg py-5">
-          <div className="w-full text-center mb-3">
+          <div className="w-full mb-3">
             <Image
               width={90}
               height={120}
@@ -142,11 +142,11 @@ export default function Discover() {
       </div>
 
       <SubTitle
-        content="Who benefit from CDS?"
+        content="Who benefits from CDS?"
         title="CDS creates a collaborative network connecting people, companies and objects without trusting intermediaries."
       />
 
-      <div className="grid grid-rows-1 sm:flex mt-20 sm:ml-20">
+      <div className="grid grid-rows-1 sm:flex mt-20 mx-8 sm:mx-28">
         <div className="hidden sm:block w-20 h-20 sm:w-60 sm:h-60">
           <Image
             width="240px"
@@ -156,8 +156,8 @@ export default function Discover() {
             alt="End user of applications"
           ></Image>
         </div>
-        <div className="ml-5 mx-5 sm:mx-20">
-          <h3 className="text-2xl font-bold text-black mb-4">
+        <div className="sm:ml-20">
+          <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
             People and companies using applications
           </h3>
           <div className="max-w-xl">
@@ -165,17 +165,17 @@ export default function Discover() {
             ownership. And this concept of data ownership is realized with the following
             capabilities :
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
-              <li>I can protect my data in order to ensure my privacy is respected.</li>
-              <li>I can trust the data I receive has not been manipulated.</li>
-              <li>I can control where my data is stored.</li>
-              <li>I can collaborate on data without intermediaries.</li>
+              <li>Protect my data in order to ensure my privacy is respected.</li>
+              <li>Trust the data I receive has not been manipulated.</li>
+              <li>Control where my data is stored.</li>
+              <li>Collaborate on data without intermediaries.</li>
             </ul>
             It gives real ownership of data while being able to interact with others efficiently.
           </div>
         </div>
       </div>
 
-      <div className="grid grid-rows-1 sm:flex mt-20 mx-5 sm:mx-20">
+      <div className="grid grid-rows-1 sm:flex mt-20 mx-8 sm:mx-28">
         <div className="hidden sm:block w-20 h-20 sm:w-60 sm:h-60">
           <Image
             width="240px"
@@ -185,8 +185,8 @@ export default function Discover() {
             alt="System administator"
           ></Image>
         </div>
-        <div className="ml-5 sm:ml-12">
-          <h3 className="text-2xl font-bold text-black mb-4">
+        <div className="sm:ml-20">
+          <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
             System administrators mainting IT infrastructures
           </h3>
           <div className="max-w-xl">
@@ -194,17 +194,17 @@ export default function Discover() {
             data flow and where the data is stored don’t have risks to compromise the data with the
             following :
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
-              <li>I can manage data without having access to private information.</li>
-              <li>I know exactly where the data is stored.</li>
-              <li>I can scale my infrastructure horizontally without limitations.</li>
-              <li>I can replicate data efficiently.</li>
+              <li>Manage data without having access to private information.</li>
+              <li>Exactly where the data is stored.</li>
+              <li>Scale infrastructure horizontally without limitations.</li>
+              <li>Replicate and backup data efficiently.</li>
             </ul>
             It creates a system where there is no need to trust the IT infrastructure.
           </div>
         </div>
       </div>
 
-      <div className="grid grid-rows-1 sm:flex mt-20 mx-5 sm:mx-20">
+      <div className="grid grid-rows-1 sm:flex mt-20 mx-8 sm:mx-28">
         <div className="hidden sm:block w-20 h-20 sm:w-60 sm:h-60">
           <Image
             width="240px"
@@ -214,34 +214,31 @@ export default function Discover() {
             alt="Distributed application developers"
           ></Image>
         </div>
-        <div className="ml-5 sm:ml-12">
-          <h3 className="text-2xl font-bold text-black mb-4">Developers building applications.</h3>
+        <div className="sm:ml-20">
+          <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
+            Developers building applications.
+          </h3>
           <div className="max-w-xl">
             CDS simplifies the development of distributed applications. It provides an interface in
             the form of a document which is known as a flexible data structuring tool. The core
             algorithm automatically manage the encrytion and efficient synchronisation of data and
             give to the developer the following benefits :
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
-              <li>
-                I can build an app with end-to-end encryption without knowing about cryptography.
-              </li>
-              <li>I can create trusted systems where the data can be certified and verified.</li>
-              <li>
-                I have the flexibility to start from a centralized solution to go toward
-                distribution.
-              </li>
-              <li>I can connect multiple devices or services using a single protocol.</li>
+              <li>Build encrypted apps without cryptography knowledge.</li>
+              <li>Create apps where the data can be certified and verified.</li>
+              <li>Evoluate from centralizated to distributed architecture.</li>
+              <li>Connect multiple devices or services using a single protocol.</li>
             </ul>
             Its a one stop solution to manage data securely from the creation to the storage.
           </div>
         </div>
       </div>
 
-      <div className="ml-0 mt-10 sm:ml-20 sm:mt-40 mb-12">
-        <NextPage descripton={'Case studies'} link={'/case-studies'}></NextPage>
+      <div className="ml-8 mt-12 sm:ml-28 sm:mt-40 mb-12">
+        <NextPage descripton={'Discover use cases'} link={'/use-cases'}></NextPage>
       </div>
 
-      <Contribution></Contribution>
+      <Contribution link="https://github.com/CondensationDS/Condensation-Website/blob/main/pages/discover.js" />
     </div>
   )
 }

@@ -1,10 +1,6 @@
 import Layout from '../components/Layout'
-
-import Description from '../components/Description'
-import Anchor from '../components/Anchor'
 import Title from '../components/Title'
 import SubTitle from '../components/SubTitle'
-import SubSubTitle from '../components/SubSubTitle'
 import SquaredTile from '../components/SquaredTile'
 import Contribution from '../components/Contribution'
 import UseCases from '../components/UseCases'
@@ -34,6 +30,7 @@ import imageBottomVehicle from '../assets/img/use-case-vehicle-microchip.png'
 import imageSideVehicle from '../assets/img/use-case-vehicle-bike.png'
 
 import NextPage from '../components/NextPage'
+import defaults from '../common/defaults'
 
 export default function CaseStudies() {
   return (
@@ -43,14 +40,14 @@ export default function CaseStudies() {
         content="Success factors"
         title="Condensation builds collaborative products which protect people's privacy and enhance the economy of trust."
       />
-      <div className="text-container pl-5 sm:pl-20 text-2xl mt-16 mb-4">
+      <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-16 mb-4">
         <h3 className="text-blue-600 inline-block font-bold">Making data ownership a reality.</h3>
-        <div className="text-xl">
+        <div>
           Build your solution with data control and certification which are pillars for getting
           connected with trust and without intermediaries.
         </div>
       </div>
-      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-20 pt-5 gap-8">
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-28 pt-5 gap-8">
         <SquaredTile
           title="End-to-end privacy"
           subtitle="to protect secrets and personal data"
@@ -71,20 +68,20 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className="text-container pl-5 sm:pl-20 text-2xl mt-24 mb-8">
+      <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-24 mb-8">
         <h3 className="text-purple-600 inline-block font-bold">
           Breaking centralization constraints.
         </h3>
-        <div className="text-xl">
+        <div>
           Distribute data where you want it to be and connect multiple actors and devices in the
           network of your solution.
         </div>
       </div>
 
-      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:px-20 pt-5 gap-8">
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:px-28 pt-5 gap-8">
         <SquaredTile
           title="Connecting objects"
-          subtitle="with security and low data consumption"
+          subtitle="with security and low consumption"
           icon={iot}
           color={'purple'}
         ></SquaredTile>
@@ -102,17 +99,17 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className="text-container pl-5 sm:pl-20 text-2xl mt-24 mb-4">
+      <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-24 mb-4">
         <h3 className="text-rose-600 inline-block font-bold">
           Getting ready for data intensiveness.
         </h3>
-        <div className="text-xl">
+        <div>
           Enable your users to collaborate on data and manage data transfers without impacting your
           solution performances.
         </div>
       </div>
 
-      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-20 pt-5 gap-8">
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-28 pt-5 gap-8">
         <SquaredTile
           title="Streaming"
           subtitle="with efficient upload of data in live"
@@ -133,17 +130,19 @@ export default function CaseStudies() {
         ></SquaredTile>
       </div>
 
-      <div className="text-container pl-5 sm:pl-20 text-3xl mt-24 mb-32 font-bold text-black">
+      <div className="text-container px-8 sm:pl-28 text-2xl sm:text-3xl mt-24 mb-32 font-bold text-black">
         All by design, with flexibility and scalability, to let your project evolve without
         limitations.
       </div>
 
       <SubTitle
-        content="Products we realized"
-        title=" Together with our contributing partners, we created web, mobile and IoT applications awarded for their innovative features."
+        content="Pilot projects"
+        title=" Together with our contributors we created web, mobile and IoT pilot projects awarded for their innovation."
       />
 
       <div className="mt-20"></div>
+
+      <div className="ml-28 h-px bg-gray-200"></div>
 
       <UseCases
         content="A smart metering system to track electric vehicles while ensuring reduced data consumption."
@@ -160,6 +159,8 @@ export default function CaseStudies() {
         ]}
       ></UseCases>
 
+      <div className="ml-28 h-px bg-gray-200"></div>
+
       <UseCases
         content="An e-Voting system with data transparency to make sure our rights are respected in a digitized society."
         imageTop={votingResults}
@@ -170,6 +171,8 @@ export default function CaseStudies() {
         altSide="I voted pin."
         awards={['Awarded by EPFL ignition grant.']}
       ></UseCases>
+
+      <div className="ml-28 h-px bg-gray-200"></div>
 
       <UseCases
         content="An end-to-end encrypted messenger to protect the privacy of our digital conversations."
@@ -186,16 +189,24 @@ export default function CaseStudies() {
         ]}
       ></UseCases>
 
-      <div className="text-container pl-5 sm:pl-20 text-3xl mt-5 sm:mt-24 mb-10 font-bold text-black">
+      <div className="h-px bg-gray-200"></div>
+
+      <div className="text-container pl-8 sm:pl-28 text-3xl mt-12 sm:mt-28 mb-12 font-bold text-black">
         Do you want to learn more about our past and ongoing projects?{' '}
-        <span className="underline text-blue-500 underline-offset-8">Contact us</span>.
+        <a
+          className="mail underline text-blue-500 underline-offset-8"
+          href={`mailto:${defaults.email}`}
+        >
+          Contact us
+        </a>
+        .
       </div>
 
-      <div className="ml-5 mt-5 sm:ml-20 sm:mt-20 mb-12">
-        <NextPage descripton={'Develop with CDS'} link={'/get-started'}></NextPage>
+      <div className="ml-8 mt-8 sm:ml-28 sm:mt-20 mb-12">
+        <NextPage descripton={'How it works?'} link={'/how-it-works'}></NextPage>
       </div>
 
-      <Contribution></Contribution>
+      <Contribution link="https://github.com/CondensationDS/Condensation-Website/blob/main/pages/use-cases.js" />
     </div>
   )
 }

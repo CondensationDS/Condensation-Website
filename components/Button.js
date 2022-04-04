@@ -1,16 +1,14 @@
 import Image from 'next/image'
 import Arrow from '../assets/img/cds-arrow.svg'
 
-export default function Button({ content }) {
+export default function Button({ content, link }) {
   return (
-    <button
+    <a
       type="button"
-      className="inline-flex items-center py-2 text-center text-blue-500 text-xl border-b"
+      className="inline-flex items-center py-2 text-center text-blue-500 text-xl border-b border-blue-500"
+      href={link}
     >
       {content}
-      <span className="ml-5 pt-1">
-        <Image src={Arrow} alt="Arrow Icon" />
-      </span>
-    </button>
+    </a>
   )
 }

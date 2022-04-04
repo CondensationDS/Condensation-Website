@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Logo from '../assets/img/logos/logo-condensation-data-system.svg'
 import Link from 'next/link'
 
-export default function ErrorPage() {
+export default function Custom404() {
   return (
     <div>
       <div className="error-page h-screen w-screen flex items-center justify-center">

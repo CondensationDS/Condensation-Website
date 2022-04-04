@@ -127,14 +127,22 @@ a {
 @media screen and (max-width: 992px) {
   .text-container p {
     max-width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .page-container p {
     padding-top: 1rem;
     max-width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 5px solid #FFFF00;
+  padding: 10px;
 }

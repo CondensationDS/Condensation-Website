@@ -16,7 +16,7 @@ export default function Sidebar() {
         showSidebar ? 'translate-x-0' : '-translate-x-full md:bg-white'
       }`}
     >
-      <div className="sidebar w-64">
+      <div className="w-64">
         <ul>
           <li className={`list-none py-0.5 px-6 ${router.pathname == '/discover' ? 'active' : ''}`}>
             <Link href="/discover">
@@ -24,18 +24,25 @@ export default function Sidebar() {
             </Link>
           </li>
           <li
-            className={`list-none py-0.5 px-6 ${
-              router.pathname == '/case-studies' ? 'active' : ''
-            }`}
+            className={`list-none py-0.5 px-6 ${router.pathname == '/use-cases' ? 'active' : ''}`}
           >
-            <Link href="/case-studies">
+            <Link href="/use-cases">
               <a onClick={openSidebar}>Discover use cases</a>
             </Link>
           </li>
           <li
-            className={`list-none py-0.5 px-6 ${router.pathname == '/get-started' ? 'active' : ''}`}
+            className={`list-none py-0.5 px-6 ${
+              router.pathname == '/how-it-works' ? 'active' : ''
+            }`}
           >
-            <Link href="/get-started">
+            <Link href="/how-it-works">
+              <a onClick={openSidebar}>How it works?</a>
+            </Link>
+          </li>
+          <li
+            className={`list-none py-0.5 px-6 ${router.pathname == '/deep-dive' ? 'active' : ''}`}
+          >
+            <Link href="/deep-dive">
               <a onClick={openSidebar}>Explore the technology</a>
             </Link>
           </li>
@@ -46,11 +53,11 @@ export default function Sidebar() {
           </li>
           <li
             className={`list-none py-0.5 px-6 ${
-              router.pathname == '/your-solution' ? 'active' : ''
+              router.pathname == '/adopt-condensation' ? 'active' : ''
             }`}
           >
-            <Link href="/your-solution">
-              <a onClick={openSidebar}>Envision your solution</a>
+            <Link href="/adopt-condensation">
+              <a onClick={openSidebar}>Adopt Condensation</a>
             </Link>
           </li>
         </ul>
@@ -58,7 +65,7 @@ export default function Sidebar() {
 
       <div className="bg-gray-200 line my-6 mx-6"></div>
 
-      <div className="external-links w-64">
+      <div className="w-64">
         <ul>
           <li className="list-none py-0.5 px-6">
             <a
@@ -74,10 +81,10 @@ export default function Sidebar() {
             <a
               className="flex justify-between items-center"
               target="_blank"
-              href={defaults.url.discord}
+              href={`mailto:${defaults.email}`}
             >
-              <span className="flex-grow">Join our Discord</span>
-              <Image src={externalLinkIcon} alt="Link Discord" />
+              <span className="flex-grow">Contact us</span>
+              <Image src={externalLinkIcon} alt="Link to email" />
             </a>
           </li>
         </ul>

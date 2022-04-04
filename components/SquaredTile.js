@@ -4,10 +4,7 @@ export default function SquaredTile({ title, subtitle, icon, color }) {
   return (
     <div
       className={
-        'w-64 h-64 p-8 flex-col shrink-0 text-center justify-center text-black font-bold text-xl leading-snug rounded-xl ' +
-        (color === 'blue' ? 'bg-blue-50' : '') +
-        (color === 'purple' ? 'bg-purple-50' : '') +
-        (color === 'rose' ? 'bg-rose-50' : '')
+        'w-64 h-64 p-8 flex justify-center flex-col shrink-0 text-left text-black font-bold text-xl leading-snug rounded-xl border border-gray-200'
       }
     >
       <div className="w-full">

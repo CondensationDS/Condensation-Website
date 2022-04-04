@@ -4,5 +4,14 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)","**/*.js?(x)"],
+      "rules": {
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
+      }
+    }
   ]
 }
