@@ -29,10 +29,10 @@ export default function Discover() {
             A lightweight and open-source code base.
           </h3>
           <div className="pt-4 text-base">
-          Condensation can be used for commercial purpose without any fees. 
-          It is organized in three lightweight modules that can be easily audited. 
-          Moreover, its implementation can be customized for specific needs, such as preferred 
-          encryption algorithms or pre-defined conflict resolution rules.
+            Condensation can be used for commercial purpose without any fees. It is organized in
+            three lightweight modules that can be easily audited. Moreover, its implementation can
+            be customized for specific needs, such as preferred encryption algorithms or pre-defined
+            conflict resolution rules.
           </div>
         </div>
 
@@ -41,10 +41,10 @@ export default function Discover() {
             Generic enough to build tailored solutions.
           </h3>
           <div className="pt-4">
-          Condensation is a data-system, i.e able to manage a complete data lifecycle. 
-          It excels particularly at data synchronization in a distributed set-up. 
-          Its main advantages are a single protocol to connect multiple devices, 
-          constitutional data security from end to end, and data stores free from centralization constraints.
+            Condensation is a data-system, i.e able to manage a complete data lifecycle. It excels
+            particularly at data synchronization in a distributed set-up. Its main advantages are a
+            single protocol to connect multiple devices, constitutional data security from end to
+            end, and data stores free from centralization constraints.
           </div>
         </div>
 
@@ -53,9 +53,10 @@ export default function Discover() {
             Secured with market proven algorithms.
           </h3>
           <div className="pt-4">
-          Condensation implementation is self-reliant from software dependencies. 
-          It uses cryptographic primitives based on open-source projects continuously challenged by cyber-security communities. 
-          The choice of algorithms ensures run time performances that fits common digital devices, IoTs, and high speed apps. 
+            Condensation implementation is self-reliant from software dependencies. It uses
+            cryptographic primitives based on open-source projects continuously challenged by
+            cyber-security communities. The choice of algorithms ensures run time performances that
+            fits common digital devices, IoTs, and high speed apps.
           </div>
         </div>
 
@@ -64,10 +65,9 @@ export default function Discover() {
             Compliant with regulations.
           </h3>
           <div className="pt-4">
-          Condensation is compliant with GDPR and other privacy regulations (contact us for more information). 
-          More importantly, data ownership and data storage are clearly defined and managed through the implementation of CDS. 
-          This particularity puts the "data sensitivity" at the core of the technology, 
-          and no longer delegated to complex internal measures.
+            Condensation is compliant with <a class="underline underline-offset-2 text-blue-500" href="https://gdpr-info.eu/" target="_blank">GDPR</a> and other privacy regulations (contact us for more information). More importantly, data ownership and data storage are clearly defined and
+            managed through the implementation of CDS. This particularity puts the "data sensitivity" at the core of the technology, and no longer 
+            delegated to complex internal measures.
           </div>
         </div>
       </div>
@@ -92,10 +92,10 @@ export default function Discover() {
             Managing the data where it is created.
           </h3>
           <div className="pt-4">
-          CDS avoids the use of centralized infrastructures by computing data directly where it is created, 
-          thus reducing risks and cost du to data transport. 
-          To do so, CDS is able to select the specific piece of data to share with indexing servers, limiting it, 
-          for example, to data intended to produce analyses or commercial services.
+            CDS avoids the use of centralized infrastructures by computing data directly where it is
+            created, thus reducing risks and cost du to data transport. To do so, CDS is able to
+            select the specific piece of data to share with indexing servers, limiting it, for
+            example, to data intended to produce analyses or commercial services.
           </div>
         </div>
         <div className="rounded-lg py-5">
@@ -112,10 +112,11 @@ export default function Discover() {
             Protecting the data itself from end-to-end.
           </h3>
           <div className="pt-4">
-          The CDS protects the privacy of individuals and companies by design. 
-          When data is shared, CDS ensures that only the recipient can decrypt and read it on their device. 
-          Furthermore, before being sent, the data is structured in an object that cannot be changed without leaving a trace. 
-          Thus, the sender's data is secure and completely trustworthy for the recipient.
+            The CDS protects the privacy of individuals and companies by design. When data is
+            shared, CDS ensures that only the recipient can decrypt and read it on their device.
+            Furthermore, before being sent, the data is structured in an object that cannot be
+            changed without leaving a trace. Thus, the sender's data is secure and completely
+            trustworthy for the recipient.
           </div>
         </div>
         <div className="rounded-lg py-5">
@@ -132,8 +133,8 @@ export default function Discover() {
             Storing data anywhere without constraints.
           </h3>
           <div className="pt-4">
-            Each account can decide where to store its data - for example on a server at home, or
-            in a cloud service located in their country. Because the data remains encrypted at all
+            Each account can decide where to store its data - for example on a server at home, or in
+            a cloud service located in their country. Because the data remains encrypted at all
             times, the storage security is no longer an issue.
           </div>
         </div>
@@ -159,11 +160,14 @@ export default function Discover() {
             People and companies in general
           </h3>
           <div className="max-w-xl">
-            CDS started with a statement - individuals and companies should remain the sole owners of their data. 
-            This concept of data ownership is made possible by the following capabilities:
+            CDS started with a statement - individuals and companies should remain the sole owners
+            of their data. This concept of data ownership is made possible by the following
+            capabilities:
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
               <li>Protecting my data in order to ensure my privacy.</li>
-              <li>To trust the data I receive, and to make sure that it has not been manipulated.</li>
+              <li>
+                To trust the data I receive, and to make sure that it has not been manipulated.
+              </li>
               <li>Control where my data is stored.</li>
               <li>Collaborate on data without intermediaries.</li>
             </ul>
@@ -187,7 +191,8 @@ export default function Discover() {
             System administrators and IT/Infra managers
           </h3>
           <div className="max-w-xl">
-          CDS secures data by design. It protects infrastructures from compromising data with the following features:
+            CDS secures data by design. It protects infrastructures from compromising data with the
+            following features:
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
               <li>The data is managed with remaning encrypted.</li>
               <li>The data is processed where the data is stored.</li>
@@ -214,16 +219,17 @@ export default function Discover() {
             Developers building applications
           </h3>
           <div className="max-w-xl">
-          CDS simplifies the development of distributed applications. 
-          It comes with a flexible and easy-to-use document management interface for developers. 
-          The core algorithm provides them with the following capabilities :
+            CDS simplifies the development of distributed applications. It comes with a flexible and
+            easy-to-use document management interface for developers. The core algorithm provides
+            them with the following capabilities :
             <ul className="py-4 pl-5 list-disc marker:text-blue-400 text-slate-500">
               <li>Building encrypted apps without prior cryptography knowledge.</li>
               <li>Creating apps that can certify and secure the data.</li>
               <li>Migrating apps from centralizated to distributed architecture.</li>
               <li>Connecting multiple devices or services using a single protocol.</li>
             </ul>
-            CDS is a compact and elegant solution for managing data securely in its entire lifecycle.
+            CDS is a compact and elegant solution for managing data securely in its entire
+            lifecycle.
           </div>
         </div>
       </div>
