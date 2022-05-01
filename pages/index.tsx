@@ -66,7 +66,7 @@ export default function Home() {
       <div className="p-8 sm:p-28">
         <div className="font-bold text-lg">Features</div>
         <div className="max-w-screen-sm pb-16 text-black text-4xl font-bold">
-          <h2>Making people and actors of the industry the owner of their data.</h2>
+          <h2>Making individuals and industries the sole owners of their data.</h2>
         </div>
         <div className="grid grid-row-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="mb-16">
@@ -77,7 +77,7 @@ export default function Home() {
               alt="Dashed eye representing data privacy."
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">End-to-end privacy</div>
-            <div>Trustless to intermediaries as data is encrypted for specific receivers.</div>
+            <div>With end-to-end encryption, there is no need to trust intermediary actors.</div>
           </div>
           <div className="mb-16">
             <Image
@@ -88,7 +88,7 @@ export default function Home() {
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">Certified data</div>
             <div>
-              The origin and completeness of the data is tampered and can always be verified.
+            The origin and completeness of the data is tracked by design and can be verified at any time.
             </div>
           </div>
           <div className="mb-16">
@@ -99,12 +99,12 @@ export default function Home() {
               alt="Dashed eye representing data privacy."
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">Distributed network</div>
-            <div>Connecting objects, people and organizations while ensuring independance.</div>
+            <div>Objects, people and organizations are interconnected but remain self-reliant.</div>
           </div>
           <div className="mb-16">
             <Image width={60} height={60} src={merge} alt="Dashed eye representing data privacy." />
             <div className="mt-4 mb-2 text-black text-xl font-bold">Performant editing</div>
-            <div>Excelling at data synchronization using a dynamic data structure.</div>
+            <div>Data synchronisation is optimized by using efficient dynamic data structures.</div>
           </div>
         </div>
         <div>
@@ -117,7 +117,7 @@ export default function Home() {
       <div className="p-8 sm:p-28">
         <div className="font-bold text-lg">Industry</div>
         <div className="max-w-screen-sm pb-16 text-black text-4xl font-bold">
-          <h2>Protecting the data itself to move it from silos towards flexible networks.</h2>
+          <h2>Moving from data silos to flexible networks by securing data constitutionally.</h2>
         </div>
         <div className="grid grid-row-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="relative h-96 bg-black rounded overflow-hidden">
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="relative h-96 bg-black rounded overflow-hidden">
             <Image layout="fill" objectFit="cover" src={legal} alt="People signing a contract." />
             <div className="text-white text-2xl absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent leading-snug">
-              Certification for compliance and regulatory
+            Certifying data and complying with regulations
             </div>
           </div>
           <div className="relative h-96 bg-black rounded overflow-hidden">
@@ -145,7 +145,7 @@ export default function Home() {
               alt="City from night exposed to attacks."
             />
             <div className="text-white text-2xl absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent leading-snug">
-              Cyber-defence to protect privacy and for security
+              Protecting privacy and populations with cyber-defense
             </div>
           </div>
           <div className="relative h-96 bg-black rounded overflow-hidden">
@@ -156,7 +156,7 @@ export default function Home() {
               alt="Image of the earth representing communities from multiple cities which generate big data."
             />
             <div className="text-white text-2xl absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent leading-snug">
-              Processing big data and collaborating
+            Handling big data and fostering digital collaboration
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function Home() {
       <div className="p-8 sm:p-28">
         <div className="font-bold text-lg">Get started</div>
         <h2 className="max-w-screen-sm pb-16 text-black text-4xl font-bold">
-          Condensation is now available in early access and building its community.
+        Condensation is building its community and is now available in early access.
         </h2>
         <div className="flex flex-wrap gap-8">
           <div className="basis-72 border p-8 shrink-0">
@@ -181,7 +181,7 @@ export default function Home() {
               alt="City from night which is exposed to attacks."
             />
             <div className="my-4 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 font-bold">
-              As a company do you want to adopt data distribution?{' '}
+              What about adopting data distribution in your company?{' '}
             </div>
             <div className="text-2xl text-black font-bold">
               <a
@@ -191,7 +191,7 @@ export default function Home() {
               >
                 Contact us
               </a>{' '}
-              to join forces and converge towards your needs.
+              to join forces and meet your goal.
             </div>
           </div>
 
@@ -203,7 +203,7 @@ export default function Home() {
               alt="City from night which is exposed to attacks."
             />
             <div className="my-4 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 font-bold">
-              Do you want to contribute to the success of CDS?{' '}
+              Interested in contributing to CDS's success?{' '}
             </div>
             <div className="text-2xl text-black font-bold">
               <a
@@ -225,7 +225,7 @@ export default function Home() {
               alt="City from night which is exposed to attacks."
             />
             <div className="my-4 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 font-bold">
-              Do you want to develop an app with CDS?{' '}
+            What if you built an app with CDS?{' '}
             </div>
             <span className="text-2xl text-black font-bold">
               <a
