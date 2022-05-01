@@ -24,13 +24,12 @@ export default function MakeItHappen() {
       <Title content="Envision your solution" title="Distribution of data is now in your hands." />
       <SubTitle
         content="Success factors"
-        title="Condensation builds collaborative products protecting privacy and enhancing the economy of trust."
+        title="Condensation will help you build collaborative products protecting privacy and enhancing the economy of trust."
       />
       <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-16 mb-4">
-        <h3 className="text-blue-600 inline-block font-bold">Making data ownership a reality.</h3>
+        <h3 className="text-blue-600 inline-block font-bold">Make data ownership a reality.</h3>
         <div>
-          Build your solution with data control and certification which are pillars for getting
-          connected with trust and without intermediaries.
+          Build your solution with data control and certification.
         </div>
       </div>
       <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-28 pt-5 gap-8">
@@ -42,13 +41,13 @@ export default function MakeItHappen() {
         ></SquaredTile>
         <SquaredTile
           title="Digital truth"
-          subtitle="to verify the data has not been altered"
+          subtitle="to verify the data reliability"
           icon={integrity}
           color={'blue'}
         ></SquaredTile>
         <SquaredTile
           title="Digital signature"
-          subtitle="to trust the origin of received data"
+          subtitle="to ensure the data origin"
           icon={signature}
           color={'blue'}
         ></SquaredTile>
@@ -56,30 +55,29 @@ export default function MakeItHappen() {
 
       <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-24 mb-8">
         <h3 className="text-purple-600 inline-block font-bold">
-          Breaking centralization constraints.
+          Break centralization constraints.
         </h3>
         <div>
-          Distribute data where you want it to be and connect multiple actors and devices in the
-          network of your solution.
+        Distribute data among the interconnected actors and devices forming the network of your solution.
         </div>
       </div>
 
       <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:px-28 pt-5 gap-8">
         <SquaredTile
-          title="Connecting objects"
+          title="Connect objects"
           subtitle="with security and low consumption"
           icon={iot}
           color={'purple'}
         ></SquaredTile>
         <SquaredTile
-          title="Working offline"
+          title="Work offline"
           subtitle="for mobility and independence"
           icon={offline}
           color={'purple'}
         ></SquaredTile>
         <SquaredTile
-          title="Relocating storage"
-          subtitle="for scaling while ensuring sovereignty"
+          title="Relocate storage"
+          subtitle="for scalability and sovereignty"
           icon={distribution}
           color={'purple'}
         ></SquaredTile>
@@ -87,29 +85,28 @@ export default function MakeItHappen() {
 
       <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-24 mb-4">
         <h3 className="text-rose-600 inline-block font-bold">
-          Getting ready for data intensiveness.
+          Get ready for data intensiveness.
         </h3>
         <div>
-          Enable your users to collaborate on data and manage data transfers without impacting your
-          solution performances.
+          Allow your users to collaborate on data without compromising the performance of your solution.
         </div>
       </div>
 
       <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-28 pt-5 gap-8">
         <SquaredTile
-          title="Streaming"
+          title="Stream"
           subtitle="with efficient upload of data in live"
           icon={streaming}
           color={'rose'}
         ></SquaredTile>
         <SquaredTile
-          title="Collaborating"
-          subtitle="with simultaneous edition of data"
+          title="Collaborate"
+          subtitle="with simultaneous data editing"
           icon={collaboration}
           color={'rose'}
         ></SquaredTile>
         <SquaredTile
-          title="Replicating"
+          title="Replicate"
           subtitle="without sharing redundancies"
           icon={replication}
           color={'rose'}
@@ -118,7 +115,7 @@ export default function MakeItHappen() {
 
       <div className="text-container px-8 sm:pl-28 text-2xl sm:text-3xl mt-24 mb-32 font-bold text-black">
         All by design, with flexibility and scalability, to let your project evolve without
-        limitations.
+        limits.
       </div>
 
       <SubTitle
