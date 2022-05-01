@@ -4,11 +4,122 @@ import SubTitle from '../components/SubTitle'
 import SubSubTitle from '../components/SubSubTitle'
 import Contribution from '../components/Contribution'
 import defaults from '../common/defaults'
+import SquaredTile from '../components/SquaredTile'
+
+import privacy from '../assets/img/cds-data-privacy.svg'
+import integrity from '../assets/img/cds-data-integrity.svg'
+import signature from '../assets/img/cds-data-signature.svg'
+
+import distribution from '../assets/img/cds-data-distribution.svg'
+import iot from '../assets/img/cds-iot-networks.svg'
+import offline from '../assets/img/cds-offline-first.svg'
+
+import streaming from '../assets/img/cds-data-streaming.svg'
+import collaboration from '../assets/img/cds-data-collaboration.svg'
+import replication from '../assets/img/cds-data-replication.svg'
 
 export default function MakeItHappen() {
   return (
     <div className="page-container max-w-screen-2xl">
       <Title content="Envision your solution" title="Distribution of data is now in your hands." />
+      <SubTitle
+        content="Success factors"
+        title="Condensation builds collaborative products protecting privacy and enhancing the economy of trust."
+      />
+      <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-16 mb-4">
+        <h3 className="text-blue-600 inline-block font-bold">Making data ownership a reality.</h3>
+        <div>
+          Build your solution with data control and certification which are pillars for getting
+          connected with trust and without intermediaries.
+        </div>
+      </div>
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-28 pt-5 gap-8">
+        <SquaredTile
+          title="End-to-end privacy"
+          subtitle="to protect secrets and personal data"
+          icon={privacy}
+          color={'blue'}
+        ></SquaredTile>
+        <SquaredTile
+          title="Digital truth"
+          subtitle="to verify the data has not been altered"
+          icon={integrity}
+          color={'blue'}
+        ></SquaredTile>
+        <SquaredTile
+          title="Digital signature"
+          subtitle="to trust the origin of received data"
+          icon={signature}
+          color={'blue'}
+        ></SquaredTile>
+      </div>
+
+      <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-24 mb-8">
+        <h3 className="text-purple-600 inline-block font-bold">
+          Breaking centralization constraints.
+        </h3>
+        <div>
+          Distribute data where you want it to be and connect multiple actors and devices in the
+          network of your solution.
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:px-28 pt-5 gap-8">
+        <SquaredTile
+          title="Connecting objects"
+          subtitle="with security and low consumption"
+          icon={iot}
+          color={'purple'}
+        ></SquaredTile>
+        <SquaredTile
+          title="Working offline"
+          subtitle="for mobility and independence"
+          icon={offline}
+          color={'purple'}
+        ></SquaredTile>
+        <SquaredTile
+          title="Relocating storage"
+          subtitle="for scaling while ensuring sovereignty"
+          icon={distribution}
+          color={'purple'}
+        ></SquaredTile>
+      </div>
+
+      <div className="text-container px-8 sm:pl-28 text-xl sm:text-2xl mt-24 mb-4">
+        <h3 className="text-rose-600 inline-block font-bold">
+          Getting ready for data intensiveness.
+        </h3>
+        <div>
+          Enable your users to collaborate on data and manage data transfers without impacting your
+          solution performances.
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 place-items-center sm:flex sm:flex-wrap sm:place-items-center sm:px-28 pt-5 gap-8">
+        <SquaredTile
+          title="Streaming"
+          subtitle="with efficient upload of data in live"
+          icon={streaming}
+          color={'rose'}
+        ></SquaredTile>
+        <SquaredTile
+          title="Collaborating"
+          subtitle="with simultaneous edition of data"
+          icon={collaboration}
+          color={'rose'}
+        ></SquaredTile>
+        <SquaredTile
+          title="Replicating"
+          subtitle="without sharing redundancies"
+          icon={replication}
+          color={'rose'}
+        ></SquaredTile>
+      </div>
+
+      <div className="text-container px-8 sm:pl-28 text-2xl sm:text-3xl mt-24 mb-32 font-bold text-black">
+        All by design, with flexibility and scalability, to let your project evolve without
+        limitations.
+      </div>
 
       <SubTitle
         content="Conception"
