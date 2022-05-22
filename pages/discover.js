@@ -41,9 +41,10 @@ export default function Discover() {
             Generic enough to build tailored solutions.
           </h3>
           <div className="pt-4">
-          Condensation is a distributed data system, i.e. capable of managing a complete data lifecycle 
-          with operating in a distributed set-up. It is particularly suited for building distributed applications, 
-          such as collaborative document editing tools, IoT/multi-devices apps, end-to-end encrypted messaging apps etc. 
+            Condensation is a distributed data system, i.e. capable of managing a complete data
+            lifecycle with operating in a distributed set-up. It is particularly suited for building
+            distributed applications, such as collaborative document editing tools,
+            IoT/multi-devices apps, end-to-end encrypted messaging apps etc.
           </div>
         </div>
 
@@ -52,10 +53,10 @@ export default function Discover() {
             Secured with market proven algorithms.
           </h3>
           <div className="pt-4">
-            Condensation is a stand-alone tool. It uses
-            cryptographic primitives based on open-source projects continuously challenged by
-            cyber-security communities. The choice of algorithms ensures run time performances that fits 
-            common and industrial digital devices or IoTs on the market.
+            Condensation is a stand-alone tool. It uses cryptographic primitives based on
+            open-source projects continuously challenged by cyber-security communities. The choice
+            of algorithms ensures run time performances that fits common and industrial digital
+            devices or IoTs on the market.
           </div>
         </div>
 
@@ -64,9 +65,17 @@ export default function Discover() {
             Compliant with regulations.
           </h3>
           <div className="pt-4">
-            Condensation is compliant with <a class="underline underline-offset-2 text-blue-500" href="https://gdpr-info.eu/" target="_blank">GDPR</a> and
-            regulations and more. CDS implementation has the particularity to put the "data sensitivity" at the core of the 
-            technology, and no longer delegated to complex internal measures.
+            Condensation is compliant with{' '}
+            <a
+              class="underline underline-offset-2 text-blue-500"
+              href="https://gdpr-info.eu/"
+              target="_blank"
+            >
+              GDPR
+            </a>{' '}
+            and regulations and more. CDS implementation has the particularity to put the "data
+            sensitivity" at the core of the technology, and no longer delegated to complex internal
+            measures.
           </div>
         </div>
       </div>
@@ -92,9 +101,18 @@ export default function Discover() {
           </h3>
           <div className="pt-4">
             <ul className="py-4 pl-5 sm:px-6 list-disc marker:text-blue-400 text-slate-500">
-              <li>CDS allows to process the data locally, i.e directly on the device where it was created or collected.</li> 
-              <li>The user keeps access to the data and can process it even when offline, without loosing any work.</li>
-              <li>Only the necessary piece of data is shared with specific recipients of the user's choice (other users, indexing servers etc.).</li>
+              <li>
+                CDS allows to process the data locally, i.e directly on the device where it was
+                created or collected.
+              </li>
+              <li>
+                The user keeps access to the data and can process it even when offline, without
+                loosing any work.
+              </li>
+              <li>
+                Only the necessary piece of data is shared with specific recipients of the user's
+                choice (other users, indexing servers etc.).
+              </li>
             </ul>
           </div>
         </div>
@@ -113,9 +131,15 @@ export default function Discover() {
           </h3>
           <div className="pt-4">
             <ul className="py-4 pl-5 sm:px-6 list-disc marker:text-blue-400 text-slate-500">
-            <li>When data is shared, CDS ensures that only the recipient can decrypt and read it on their device.</li>
-            <li>Before being sent, the data is structured in an object that cannot be altered/corrupted.</li>
-            <li>CDS ensure the sender's identity with digital signatures.</li>
+              <li>
+                When data is shared, CDS ensures that only the recipient can decrypt and read it on
+                their device.
+              </li>
+              <li>
+                Before being sent, the data is structured in an object that cannot be
+                altered/corrupted.
+              </li>
+              <li>CDS ensure the sender's identity with digital signatures.</li>
             </ul>
           </div>
         </div>
@@ -133,10 +157,15 @@ export default function Discover() {
             Storing data anywhere without constraints.
           </h3>
           <div className="pt-4">
-          <ul className="py-4 pl-5 sm:px-6 list-disc marker:text-blue-400 text-slate-500">
-            <li>CDS allows to store data anywhere - personal device, company servers,
-             cloud services etc.</li>
-            <li>With CDS the data remains encrypted at all time and thus resistant to any storage security breach.</li>
+            <ul className="py-4 pl-5 sm:px-6 list-disc marker:text-blue-400 text-slate-500">
+              <li>
+                CDS allows to store data anywhere - personal device, company servers, cloud services
+                etc.
+              </li>
+              <li>
+                With CDS the data remains encrypted at all time and thus resistant to any storage
+                security breach.
+              </li>
             </ul>
           </div>
         </div>
