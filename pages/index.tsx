@@ -77,7 +77,9 @@ export default function Home() {
               alt="Dashed eye representing data privacy."
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">End-to-end privacy</div>
-            <div>There is no need to trust intermediary actors thanks to end-to-end encryption.</div>
+            <div>
+              There is no need to trust intermediary actors thanks to end-to-end encryption.
+            </div>
           </div>
           <div className="mb-16">
             <Image
@@ -134,7 +136,7 @@ export default function Home() {
           <div className="relative h-96 bg-black rounded overflow-hidden">
             <Image layout="fill" objectFit="cover" src={legal} alt="People signing a contract." />
             <div className="text-white text-2xl absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent leading-snug">
-            Certifying data and complying with regulations
+              Certifying data and complying with regulations
             </div>
           </div>
           <div className="relative h-96 bg-black rounded overflow-hidden">
@@ -156,7 +158,7 @@ export default function Home() {
               alt="Image of the earth representing communities from multiple cities which generate big data."
             />
             <div className="text-white text-2xl absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent leading-snug">
-            Processing Big Data and fostering collaboration
+              Processing Big Data and fostering collaboration
             </div>
           </div>
         </div>
@@ -170,7 +172,7 @@ export default function Home() {
       <div className="p-8 sm:p-28">
         <div className="font-bold text-lg">Get started</div>
         <h2 className="max-w-screen-sm pb-16 text-black text-4xl font-bold">
-        Condensation is building its community and is now available in early access.
+          Condensation is building its community and is now available in early access.
         </h2>
         <div className="flex flex-wrap gap-8">
           <div className="basis-72 border p-8 shrink-0">
@@ -225,7 +227,7 @@ export default function Home() {
               alt="City from night which is exposed to attacks."
             />
             <div className="my-4 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-sky-500 font-bold">
-            What if you built an app with CDS?{' '}
+              What if you built an app with CDS?{' '}
             </div>
             <span className="text-2xl text-black font-bold">
               <a
