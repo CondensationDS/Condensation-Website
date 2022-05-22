@@ -66,7 +66,7 @@ export default function Home() {
       <div className="p-8 sm:p-28">
         <div className="font-bold text-lg">Features</div>
         <div className="max-w-screen-sm pb-16 text-black text-4xl font-bold">
-          <h2>Making individuals and industries the sole owners of their data.</h2>
+          <h2>Making people and companies the sole owners of their data.</h2>
         </div>
         <div className="grid grid-row-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="mb-16">
@@ -77,7 +77,7 @@ export default function Home() {
               alt="Dashed eye representing data privacy."
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">End-to-end privacy</div>
-            <div>With end-to-end encryption, there is no need to trust intermediary actors.</div>
+            <div>There is no need to trust intermediary actors thanks to end-to-end encryption.</div>
           </div>
           <div className="mb-16">
             <Image
@@ -88,7 +88,7 @@ export default function Home() {
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">Certified data</div>
             <div>
-            The origin and completeness of the data is tracked by design and can be verified at any time.
+              Data traceability guarantees the origin and completeness of the data at all times.
             </div>
           </div>
           <div className="mb-16">
@@ -99,7 +99,7 @@ export default function Home() {
               alt="Dashed eye representing data privacy."
             />
             <div className="mt-4 mb-2 text-black text-xl font-bold">Distributed network</div>
-            <div>Objects, people and organizations are interconnected but remain self-reliant.</div>
+            <div>Objects, people and organizations are interconnected but remain autonomous.</div>
           </div>
           <div className="mb-16">
             <Image width={60} height={60} src={merge} alt="Dashed eye representing data privacy." />
@@ -117,7 +117,7 @@ export default function Home() {
       <div className="p-8 sm:p-28">
         <div className="font-bold text-lg">Industry</div>
         <div className="max-w-screen-sm pb-16 text-black text-4xl font-bold">
-          <h2>Moving from data silos to flexible networks by securing data constitutionally.</h2>
+          <h2>Moving from data silos to flexible networks in total safety.</h2>
         </div>
         <div className="grid grid-row-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="relative h-96 bg-black rounded overflow-hidden">
@@ -156,7 +156,7 @@ export default function Home() {
               alt="Image of the earth representing communities from multiple cities which generate big data."
             />
             <div className="text-white text-2xl absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent leading-snug">
-            Handling big data and fostering digital collaboration
+            Processing Big Data and fostering collaboration
             </div>
           </div>
         </div>
