@@ -71,7 +71,7 @@ export default function MeetOurTeam() {
         />
 
         <People
-          name="Thomas Souksouvan"
+          name="Thomas Souksouvanh"
           picture={souksou}
           contribution="is making distributed apps"
           role="he is responsible of application developement"
