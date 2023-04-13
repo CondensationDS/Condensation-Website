@@ -46,11 +46,6 @@ export default function Sidebar() {
               <a onClick={openSidebar}>Explore the technology</a>
             </Link>
           </li>
-          <li className={`list-none py-0.5 px-6 ${router.pathname == '/about-us' ? 'active' : ''}`}>
-            <Link href="/about-us">
-              <a onClick={openSidebar}>Meet the team</a>
-            </Link>
-          </li>
           <li
             className={`list-none py-0.5 px-6 ${
               router.pathname == '/adopt-condensation' ? 'active' : ''
